@@ -1,12 +1,13 @@
 import XCTest
 import ViewInspector
 @testable import fizzBuzzKata
+
 extension ContentView: Inspectable { }
 
 
 class ContentViewTests: XCTestCase {
 
-    let view = ContentView()
+    var view = ContentView()
 
     func testShouldPrintFizzBuzz() throws {
         let button = try view.inspect().find(text: "Fizzbuzz")
@@ -27,9 +28,14 @@ class ContentViewTests: XCTestCase {
     }
 
     func testButtonShouldModifyText() throws {
-        try view.inspect().find(button: "Do the things").tap()
+        var view = ContentView()
 
-        XCTAssertEqual(view.text, "default")
+        let exp = view.on(\.didAppear) { view in
+            try view.button(2).tap()
+            XCTAssertEqual(try view.actualView().text, "output")
+        }
+
+        ViewHosting.host(view: view)
+        wait(for: [exp], timeout: 0.1)
     }
-
 }
