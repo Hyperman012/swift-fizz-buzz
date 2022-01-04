@@ -2,14 +2,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Fizzbuzz")
+        Text(text)
             .padding()
         TextField("number", text: $number)
-        Button(action: {}) {
+        Button(action: {self.text = "output"}) {
             Text("Do the things")
         }
 
     }
+    @State public var text: String = "Fizzbuzz"
     @State private var number: String = "default"
 }
 

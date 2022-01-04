@@ -11,8 +11,9 @@
 		CC18E72627849740006DA5DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC18E72527849740006DA5DC /* ContentView.swift */; };
 		CC18E72827849741006DA5DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC18E72727849741006DA5DC /* Assets.xcassets */; };
 		CC18E72B27849741006DA5DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC18E72A27849741006DA5DC /* Preview Assets.xcassets */; };
-		CC18E73527849741006DA5DC /* fizzBuzzKataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC18E73427849741006DA5DC /* fizzBuzzKataTests.swift */; };
+		CC18E73527849741006DA5DC /* ContentViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC18E73427849741006DA5DC /* ContentViewTests.swift */; };
 		CC18E74127849741006DA5DC /* fizzBuzzKataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC18E74027849741006DA5DC /* fizzBuzzKataUITestsLaunchTests.swift */; };
+		CC18E75F2784F0D4006DA5DC /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = CC18E75E2784F0D4006DA5DC /* ViewInspector */; };
 		F02634B99AF9E67DA6651A6A /* FiveStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0263126C4AB17524F5FCD77 /* FiveStrategy.swift */; };
 		F02635EB2623E0C0B61C21C8 /* ThreeStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F026376BC9B1198F5D6C7D32 /* ThreeStrategy.swift */; };
 		F02636AD1987713CFACDDE74 /* StrategyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0263C0BD093020884B5E8F6 /* StrategyProtocol.swift */; };
@@ -46,7 +47,7 @@
 		CC18E72727849741006DA5DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC18E72A27849741006DA5DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CC18E73027849741006DA5DC /* fizzBuzzKataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fizzBuzzKataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC18E73427849741006DA5DC /* fizzBuzzKataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fizzBuzzKataTests.swift; sourceTree = "<group>"; };
+		CC18E73427849741006DA5DC /* ContentViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewTests.swift; sourceTree = "<group>"; };
 		CC18E73A27849741006DA5DC /* fizzBuzzKataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fizzBuzzKataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC18E74027849741006DA5DC /* fizzBuzzKataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fizzBuzzKataUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F026312603FA57E9E8AA0F3A /* FizzyBuzzy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FizzyBuzzy.swift; sourceTree = "<group>"; };
@@ -70,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC18E75F2784F0D4006DA5DC /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,7 +131,7 @@
 		CC18E73327849741006DA5DC /* fizzBuzzKataTests */ = {
 			isa = PBXGroup;
 			children = (
-				CC18E73427849741006DA5DC /* fizzBuzzKataTests.swift */,
+				CC18E73427849741006DA5DC /* ContentViewTests.swift */,
 				F0263959F42A62104346DA56 /* FizzyBuzzyTests.swift */,
 				F02636109606DA3E82A3B057 /* FiveStrategyTests.swift */,
 				F026356E48C9D77EEF38586F /* ThreeStrategyTests.swift */,
@@ -179,6 +181,9 @@
 				CC18E73227849741006DA5DC /* PBXTargetDependency */,
 			);
 			name = fizzBuzzKataTests;
+			packageProductDependencies = (
+				CC18E75E2784F0D4006DA5DC /* ViewInspector */,
+			);
 			productName = fizzBuzzKataTests;
 			productReference = CC18E73027849741006DA5DC /* fizzBuzzKataTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -233,6 +238,9 @@
 				Base,
 			);
 			mainGroup = CC18E71727849740006DA5DC;
+			packageReferences = (
+				CC18E75D2784F0D4006DA5DC /* XCRemoteSwiftPackageReference "ViewInspector" */,
+			);
 			productRefGroup = CC18E72127849740006DA5DC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -288,7 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC18E73527849741006DA5DC /* fizzBuzzKataTests.swift in Sources */,
+				CC18E73527849741006DA5DC /* ContentViewTests.swift in Sources */,
 				F0263841DE1175118295B7E3 /* FiveStrategyTests.swift in Sources */,
 				F0263AFA8781099216B8BF49 /* FizzyBuzzyTests.swift in Sources */,
 				F026396864540D2593E45DD7 /* ThreeStrategyTests.swift in Sources */,
@@ -603,6 +611,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CC18E75D2784F0D4006DA5DC /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CC18E75E2784F0D4006DA5DC /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC18E75D2784F0D4006DA5DC /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CC18E71827849740006DA5DC /* Project object */;
 }

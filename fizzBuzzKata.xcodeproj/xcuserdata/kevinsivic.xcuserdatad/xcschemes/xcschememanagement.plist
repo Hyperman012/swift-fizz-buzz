@@ -47,6 +47,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>fizzBuzzKataUITestsLaunchTests.testShouldShowButton.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 	</dict>
 </dict>
 </plist>
