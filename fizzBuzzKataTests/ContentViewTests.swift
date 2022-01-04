@@ -28,8 +28,6 @@ class ContentViewTests: XCTestCase {
     }
 
     func testButtonShouldModifyText() throws {
-        var view = ContentView()
-
         let exp = view.on(\.didAppear) { view in
             try view.button(2).tap()
             XCTAssertEqual(try view.actualView().text, "output")
