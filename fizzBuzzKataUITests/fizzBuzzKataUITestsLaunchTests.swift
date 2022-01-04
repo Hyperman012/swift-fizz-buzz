@@ -1,16 +1,9 @@
-//
-//  fizzBuzzKataUITestsLaunchTests.swift
-//  fizzBuzzKataUITests
-//
-//  Created by Kevin Sivic on 1/4/22.
-//
-
 import XCTest
 
 class fizzBuzzKataUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
-        true
+        false
     }
 
     override func setUpWithError() throws {
@@ -20,13 +13,14 @@ class fizzBuzzKataUITestsLaunchTests: XCTestCase {
     func testLaunch() throws {
         let app = XCUIApplication()
         app.launch()
+    }
 
-        // Insert steps here to perform after app launch but before taking a screenshot,
-        // such as logging into a test account or navigating somewhere in the app
+    func testShouldPrintFizzBuzz() throws {
+        let app = XCUIApplication()
+        app.launch()
 
-        let attachment = XCTAttachment(screenshot: app.screenshot())
-        attachment.name = "Launch Screen"
-        attachment.lifetime = .keepAlways
-        add(attachment)
+        let text = app.staticTexts["Fizzbuzz"];
+
+        XCTAssert(text.exists);
     }
 }

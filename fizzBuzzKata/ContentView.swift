@@ -1,15 +1,8 @@
-//
-//  ContentView.swift
-//  fizzBuzzKata
-//
-//  Created by Kevin Sivic on 1/4/22.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
+        Text("Fizzbuzz")
             .padding()
     }
 }
