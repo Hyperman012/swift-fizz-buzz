@@ -21,7 +21,7 @@ class fizzBuzzKataUITestsLaunchTests: XCTestCase {
 
         let text = app.staticTexts["Fizzbuzz"];
 
-        XCTAssert(text.exists);
+        XCTAssert(text.exists)
     }
 
     func testShouldShowButton() throws {
@@ -30,7 +30,7 @@ class fizzBuzzKataUITestsLaunchTests: XCTestCase {
 
         let button = app.buttons["Do the things"]
 
-        XCTAssert(button.exists);
+        XCTAssert(button.exists)
     }
 
     func testShouldHaveInputBox() throws {
@@ -39,6 +39,6 @@ class fizzBuzzKataUITestsLaunchTests: XCTestCase {
 
         let input = app.textFields["number"]
 
-        XCTAssert(input.exists);
+        XCTAssert(input.exists)
     }
 }
