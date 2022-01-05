@@ -77,7 +77,6 @@
 			children = (
 				11A6FE092784D986003A8195 /* storyboard */,
 				11A6FE202784D987003A8195 /* storyboardTests */,
-				11A6FE2A2784D987003A8195 /* storyboardUITests */,
 				11A6FE082784D986003A8195 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,13 +111,6 @@
 				11A6FE212784D987003A8195 /* storyboardTests.swift */,
 			);
 			path = storyboardTests;
-			sourceTree = "<group>";
-		};
-		11A6FE2A2784D987003A8195 /* storyboardUITests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = storyboardUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

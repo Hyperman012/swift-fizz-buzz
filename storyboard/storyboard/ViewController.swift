@@ -1,4 +1,5 @@
 import UIKit
+import fizzBuzzKata
 
 class ViewController: UIViewController {
 
@@ -13,7 +14,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonClick() {
-        label.text = input.text
+        let fizzyBuzzy = FizzyBuzzy(ThreeStrategy(), FiveStrategy())
+        label.text = fizzyBuzzy.calculate(input.text)
     }
     
 }
