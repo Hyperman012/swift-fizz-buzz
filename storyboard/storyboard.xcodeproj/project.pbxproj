@@ -14,8 +14,6 @@
 		11A6FE142784D987003A8195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11A6FE132784D987003A8195 /* Assets.xcassets */; };
 		11A6FE172784D987003A8195 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11A6FE152784D987003A8195 /* LaunchScreen.storyboard */; };
 		11A6FE222784D987003A8195 /* storyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6FE212784D987003A8195 /* storyboardTests.swift */; };
-		11A6FE2C2784D987003A8195 /* storyboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6FE2B2784D987003A8195 /* storyboardUITests.swift */; };
-		11A6FE2E2784D987003A8195 /* storyboardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6FE2D2784D987003A8195 /* storyboardUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +45,6 @@
 		11A6FE1D2784D987003A8195 /* storyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = storyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A6FE212784D987003A8195 /* storyboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storyboardTests.swift; sourceTree = "<group>"; };
 		11A6FE272784D987003A8195 /* storyboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = storyboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		11A6FE2B2784D987003A8195 /* storyboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storyboardUITests.swift; sourceTree = "<group>"; };
-		11A6FE2D2784D987003A8195 /* storyboardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storyboardUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,8 +117,6 @@
 		11A6FE2A2784D987003A8195 /* storyboardUITests */ = {
 			isa = PBXGroup;
 			children = (
-				11A6FE2B2784D987003A8195 /* storyboardUITests.swift */,
-				11A6FE2D2784D987003A8195 /* storyboardUITestsLaunchTests.swift */,
 			);
 			path = storyboardUITests;
 			sourceTree = "<group>";
@@ -276,8 +270,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11A6FE2C2784D987003A8195 /* storyboardUITests.swift in Sources */,
-				11A6FE2E2784D987003A8195 /* storyboardUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

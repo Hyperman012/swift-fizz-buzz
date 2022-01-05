@@ -33,6 +33,22 @@ class storyboardTests: XCTestCase {
     func testButtonShouldModifyText() throws {
         sut.button.sendActions(for: .touchUpInside)
 
-        XCTAssertEqual(sut.label.text, "output");
+        XCTAssertEqual(sut.label.text, "Input");
+    }
+
+    func testButtonShouldPutInputInOutput() throws {
+        sut.input.text = "1"
+
+        sut.button.sendActions(for: .touchUpInside)
+
+        XCTAssertEqual(sut.label.text, "1")
+    }
+
+    func testButtonShouldPrintFizzForInput3() throws {
+        sut.input.text = "3"
+
+        sut.button.sendActions(for: .touchUpInside)
+
+        XCTAssertEqual(sut.label.text, "fizz")
     }
 }

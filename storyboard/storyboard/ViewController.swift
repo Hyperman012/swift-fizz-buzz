@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonClick() {
-        label.text = "output"
+        label.text = input.text
     }
     
 }
