@@ -9,7 +9,9 @@ struct ContentView: View {
     var body: some View {
         Text(text)
             .padding()
+
         TextField("number", text: $number)
+
         Button(action: {
             self.text = "output"
         }, label: { Text("Do the things") })

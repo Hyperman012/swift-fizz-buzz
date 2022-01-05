@@ -9,14 +9,17 @@
 /* Begin PBXBuildFile section */
 		11A6FE0B2784D986003A8195 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6FE0A2784D986003A8195 /* AppDelegate.swift */; };
 		11A6FE0D2784D986003A8195 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6FE0C2784D986003A8195 /* SceneDelegate.swift */; };
-		11A6FE0F2784D986003A8195 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6FE0E2784D986003A8195 /* ViewController.swift */; };
+		11A6FE0F2784D986003A8195 /* FizzBuzzViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6FE0E2784D986003A8195 /* FizzBuzzViewController.swift */; };
 		11A6FE122784D986003A8195 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11A6FE102784D986003A8195 /* Main.storyboard */; };
 		11A6FE142784D987003A8195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11A6FE132784D987003A8195 /* Assets.xcassets */; };
 		11A6FE172784D987003A8195 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11A6FE152784D987003A8195 /* LaunchScreen.storyboard */; };
-		11A6FE222784D987003A8195 /* ViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6FE212784D987003A8195 /* ViewControllerTest.swift */; };
+		11A6FE222784D987003A8195 /* FizzBuzzViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6FE212784D987003A8195 /* FizzBuzzViewControllerTest.swift */; };
+		AD2FAB5A6D7C48B6DB6F234E /* FizzBuzzController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2FA738FD46D6B6AF455417 /* FizzBuzzController.swift */; };
 		F02636A1EE1E0B201C386829 /* StrategyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F026350AD71DC91D30AB8E0A /* StrategyProtocol.swift */; };
 		F02637DE8438CA8D025CEF75 /* FiveStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02631CAFF02C04809170852 /* FiveStrategy.swift */; };
+		F026388FFD895BA3750E4725 /* FizzBuzzControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0263126FFD720D62C1F2675 /* FizzBuzzControllerTest.swift */; };
 		F0263DA4FA968D3E81ED170E /* FizzyBuzzy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0263C397A63FEBF97621DE4 /* FizzyBuzzy.swift */; };
+		F0263E2EB4DC8DF6DF9D389F /* FizzBuzzViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F026351EF96168ECFD936A66 /* FizzBuzzViewModel.swift */; };
 		F0263EFA693B75746900ADBB /* ThreeStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02630E7497E6B0240E8948C /* ThreeStrategy.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,17 +44,20 @@
 		11A6FE072784D986003A8195 /* storyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = storyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A6FE0A2784D986003A8195 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11A6FE0C2784D986003A8195 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		11A6FE0E2784D986003A8195 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		11A6FE0E2784D986003A8195 /* FizzBuzzViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzViewController.swift; sourceTree = "<group>"; };
 		11A6FE112784D986003A8195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11A6FE132784D987003A8195 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11A6FE162784D987003A8195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11A6FE182784D987003A8195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11A6FE1D2784D987003A8195 /* storyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = storyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		11A6FE212784D987003A8195 /* ViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTest.swift; sourceTree = "<group>"; };
+		11A6FE212784D987003A8195 /* FizzBuzzViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzViewControllerTest.swift; sourceTree = "<group>"; };
 		11A6FE272784D987003A8195 /* storyboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = storyboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD2FA738FD46D6B6AF455417 /* FizzBuzzController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FizzBuzzController.swift; sourceTree = "<group>"; };
 		F02630E7497E6B0240E8948C /* ThreeStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeStrategy.swift; sourceTree = "<group>"; };
+		F0263126FFD720D62C1F2675 /* FizzBuzzControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FizzBuzzControllerTest.swift; sourceTree = "<group>"; };
 		F02631CAFF02C04809170852 /* FiveStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiveStrategy.swift; sourceTree = "<group>"; };
 		F026350AD71DC91D30AB8E0A /* StrategyProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrategyProtocol.swift; sourceTree = "<group>"; };
+		F026351EF96168ECFD936A66 /* FizzBuzzViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FizzBuzzViewModel.swift; sourceTree = "<group>"; };
 		F0263C397A63FEBF97621DE4 /* FizzyBuzzy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FizzyBuzzy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,7 +110,7 @@
 			children = (
 				11A6FE0A2784D986003A8195 /* AppDelegate.swift */,
 				11A6FE0C2784D986003A8195 /* SceneDelegate.swift */,
-				11A6FE0E2784D986003A8195 /* ViewController.swift */,
+				11A6FE0E2784D986003A8195 /* FizzBuzzViewController.swift */,
 				11A6FE102784D986003A8195 /* Main.storyboard */,
 				11A6FE132784D987003A8195 /* Assets.xcassets */,
 				11A6FE152784D987003A8195 /* LaunchScreen.storyboard */,
@@ -113,6 +119,8 @@
 				F02630E7497E6B0240E8948C /* ThreeStrategy.swift */,
 				F02631CAFF02C04809170852 /* FiveStrategy.swift */,
 				F026350AD71DC91D30AB8E0A /* StrategyProtocol.swift */,
+				F026351EF96168ECFD936A66 /* FizzBuzzViewModel.swift */,
+				AD2FA738FD46D6B6AF455417 /* FizzBuzzController.swift */,
 			);
 			path = storyboard;
 			sourceTree = "<group>";
@@ -120,7 +128,8 @@
 		11A6FE202784D987003A8195 /* storyboardTests */ = {
 			isa = PBXGroup;
 			children = (
-				11A6FE212784D987003A8195 /* ViewControllerTest.swift */,
+				11A6FE212784D987003A8195 /* FizzBuzzViewControllerTest.swift */,
+				F0263126FFD720D62C1F2675 /* FizzBuzzControllerTest.swift */,
 			);
 			path = storyboardTests;
 			sourceTree = "<group>";
@@ -256,13 +265,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11A6FE0F2784D986003A8195 /* ViewController.swift in Sources */,
+				11A6FE0F2784D986003A8195 /* FizzBuzzViewController.swift in Sources */,
 				11A6FE0B2784D986003A8195 /* AppDelegate.swift in Sources */,
 				11A6FE0D2784D986003A8195 /* SceneDelegate.swift in Sources */,
 				F0263DA4FA968D3E81ED170E /* FizzyBuzzy.swift in Sources */,
 				F0263EFA693B75746900ADBB /* ThreeStrategy.swift in Sources */,
 				F02637DE8438CA8D025CEF75 /* FiveStrategy.swift in Sources */,
 				F02636A1EE1E0B201C386829 /* StrategyProtocol.swift in Sources */,
+				F0263E2EB4DC8DF6DF9D389F /* FizzBuzzViewModel.swift in Sources */,
+				AD2FAB5A6D7C48B6DB6F234E /* FizzBuzzController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +281,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11A6FE222784D987003A8195 /* ViewControllerTest.swift in Sources */,
+				11A6FE222784D987003A8195 /* FizzBuzzViewControllerTest.swift in Sources */,
+				F026388FFD895BA3750E4725 /* FizzBuzzControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
