@@ -14,6 +14,9 @@
 		CC18E73527849741006DA5DC /* ContentViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC18E73427849741006DA5DC /* ContentViewTests.swift */; };
 		CC18E74127849741006DA5DC /* fizzBuzzKataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC18E74027849741006DA5DC /* fizzBuzzKataUITestsLaunchTests.swift */; };
 		CC18E75F2784F0D4006DA5DC /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = CC18E75E2784F0D4006DA5DC /* ViewInspector */; };
+		CC18E7662785D78F006DA5DC /* storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC18E7622785D78F006DA5DC /* storyboard */; };
+		CC18E7672785D78F006DA5DC /* storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC18E7622785D78F006DA5DC /* storyboard */; };
+		CC18E7682785D78F006DA5DC /* storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC18E7622785D78F006DA5DC /* storyboard */; };
 		F02634B99AF9E67DA6651A6A /* FiveStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0263126C4AB17524F5FCD77 /* FiveStrategy.swift */; };
 		F02635EB2623E0C0B61C21C8 /* ThreeStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F026376BC9B1198F5D6C7D32 /* ThreeStrategy.swift */; };
 		F02636AD1987713CFACDDE74 /* StrategyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0263C0BD093020884B5E8F6 /* StrategyProtocol.swift */; };
@@ -38,6 +41,27 @@
 			remoteGlobalIDString = CC18E71F27849740006DA5DC;
 			remoteInfo = fizzBuzzKata;
 		};
+		F026338846CF3DD353EC4A1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F02630DF3385EFFDA91C62B4 /* storyboard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 11A6FE072784D986003A8195;
+			remoteInfo = storyboard;
+		};
+		F0263B8A6CA0FA544917D156 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F02630DF3385EFFDA91C62B4 /* storyboard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 11A6FE1D2784D987003A8195;
+			remoteInfo = storyboardTests;
+		};
+		F0263C28004F6EC4B91FF061 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F02630DF3385EFFDA91C62B4 /* storyboard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 11A6FE272784D987003A8195;
+			remoteInfo = storyboardUITests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +74,8 @@
 		CC18E73427849741006DA5DC /* ContentViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewTests.swift; sourceTree = "<group>"; };
 		CC18E73A27849741006DA5DC /* fizzBuzzKataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fizzBuzzKataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC18E74027849741006DA5DC /* fizzBuzzKataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fizzBuzzKataUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CC18E7622785D78F006DA5DC /* storyboard */ = {isa = PBXFileReference; lastKnownFileType = folder; path = storyboard; sourceTree = "<group>"; };
+		F02630DF3385EFFDA91C62B4 /* storyboard.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = storyboard.xcodeproj; path = storyboard/storyboard.xcodeproj; sourceTree = "<group>"; };
 		F026312603FA57E9E8AA0F3A /* FizzyBuzzy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FizzyBuzzy.swift; sourceTree = "<group>"; };
 		F0263126C4AB17524F5FCD77 /* FiveStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiveStrategy.swift; sourceTree = "<group>"; };
 		F026356E48C9D77EEF38586F /* ThreeStrategyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeStrategyTests.swift; sourceTree = "<group>"; };
@@ -88,10 +114,12 @@
 		CC18E71727849740006DA5DC = {
 			isa = PBXGroup;
 			children = (
+				CC18E7622785D78F006DA5DC /* storyboard */,
 				CC18E72227849740006DA5DC /* fizzBuzzKata */,
 				CC18E73327849741006DA5DC /* fizzBuzzKataTests */,
 				CC18E73D27849741006DA5DC /* fizzBuzzKataUITests */,
 				CC18E72127849740006DA5DC /* Products */,
+				F02630DF3385EFFDA91C62B4 /* storyboard.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +173,16 @@
 				CC18E74027849741006DA5DC /* fizzBuzzKataUITestsLaunchTests.swift */,
 			);
 			path = fizzBuzzKataUITests;
+			sourceTree = "<group>";
+		};
+		F0263437EEB5A2CCB639A904 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0263E3723DDC23B4804115C /* storyboard.app */,
+				F026342AC470CDBD6D758578 /* storyboardTests.xctest */,
+				F026375158B73A3A2C14A956 /* storyboardUITests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +281,12 @@
 			);
 			productRefGroup = CC18E72127849740006DA5DC /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F0263437EEB5A2CCB639A904 /* Products */;
+					ProjectRef = F02630DF3385EFFDA91C62B4 /* storyboard.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CC18E71F27849740006DA5DC /* fizzBuzzKata */,
@@ -252,12 +296,37 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		F026342AC470CDBD6D758578 /* storyboardTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = storyboardTests.xctest;
+			remoteRef = F0263B8A6CA0FA544917D156 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F026375158B73A3A2C14A956 /* storyboardUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = storyboardUITests.xctest;
+			remoteRef = F0263C28004F6EC4B91FF061 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F0263E3723DDC23B4804115C /* storyboard.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = storyboard.app;
+			remoteRef = F026338846CF3DD353EC4A1E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		CC18E71E27849740006DA5DC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CC18E72B27849741006DA5DC /* Preview Assets.xcassets in Resources */,
+				CC18E7662785D78F006DA5DC /* storyboard in Resources */,
 				CC18E72827849741006DA5DC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +335,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC18E7672785D78F006DA5DC /* storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +343,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC18E7682785D78F006DA5DC /* storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +586,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fizzBuzzKata.app/fizzBuzzKata";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/storyboard\"/**";
 			};
 			name = Debug;
 		};
@@ -534,6 +606,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fizzBuzzKata.app/fizzBuzzKata";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/storyboard\"/**";
 			};
 			name = Release;
 		};

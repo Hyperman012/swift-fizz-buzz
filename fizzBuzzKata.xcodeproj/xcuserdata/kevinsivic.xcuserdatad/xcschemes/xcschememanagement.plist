@@ -23,7 +23,7 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
-		<key>All UI Tests.xcscheme</key>
+		<key>All SwiftUI Tests.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>
@@ -40,7 +40,7 @@
 			<key>isShown</key>
 			<false />
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>7</integer>
 		</dict>
 		<key>All Tests.xcscheme</key>
 		<dict>
@@ -50,7 +50,14 @@
 		<key>fizzBuzzKataUITestsLaunchTests.testShouldShowButton.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>6</integer>
+		</dict>
+		<key>ContentViewTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false />
+			<key>orderHint</key>
+			<integer>8</integer>
 		</dict>
 	</dict>
 </dict>

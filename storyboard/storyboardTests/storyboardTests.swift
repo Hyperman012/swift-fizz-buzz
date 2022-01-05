@@ -2,26 +2,37 @@ import XCTest
 @testable import storyboard
 
 class storyboardTests: XCTestCase {
+    var sut: ViewController!
 
-    override func setUpWithError() throws {}
+    override func setUpWithError() throws {
+        try super.setUpWithError()
 
-    override func tearDownWithError() throws {}
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        sut = storyboard.instantiateViewController(identifier: String(describing: ViewController.self))
+        sut.loadViewIfNeeded()
     }
 
-    func test_is_a_test() throws {
-        // arrange.
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let sut: ViewController = storyboard.instantiateViewController(identifier: String(describing: ViewController.self))
-        sut.loadViewIfNeeded()
+    override func tearDownWithError() throws {
+        sut = nil
 
-        // act.
+        try super.tearDownWithError()
+    }
+
+    func testShouldPrintFizzBuzz() throws {
+        XCTAssertEqual(sut.label.text, "Fizzbuzz");
+    }
+
+    func testShouldShowButton() throws {
+        XCTAssertNotNil(sut.button)
+    }
+
+    func testShouldHaveInputBox() throws {
+        XCTAssertNotNil(sut.input)
+    }
+
+    func testButtonShouldModifyText() throws {
         sut.button.sendActions(for: .touchUpInside)
+
+        XCTAssertEqual(sut.label.text, "output");
     }
 }
