@@ -13,7 +13,11 @@
 		11A6FE122784D986003A8195 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11A6FE102784D986003A8195 /* Main.storyboard */; };
 		11A6FE142784D987003A8195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11A6FE132784D987003A8195 /* Assets.xcassets */; };
 		11A6FE172784D987003A8195 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11A6FE152784D987003A8195 /* LaunchScreen.storyboard */; };
-		11A6FE222784D987003A8195 /* storyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6FE212784D987003A8195 /* storyboardTests.swift */; };
+		11A6FE222784D987003A8195 /* ViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6FE212784D987003A8195 /* ViewControllerTest.swift */; };
+		F02636A1EE1E0B201C386829 /* StrategyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F026350AD71DC91D30AB8E0A /* StrategyProtocol.swift */; };
+		F02637DE8438CA8D025CEF75 /* FiveStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02631CAFF02C04809170852 /* FiveStrategy.swift */; };
+		F0263DA4FA968D3E81ED170E /* FizzyBuzzy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0263C397A63FEBF97621DE4 /* FizzyBuzzy.swift */; };
+		F0263EFA693B75746900ADBB /* ThreeStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02630E7497E6B0240E8948C /* ThreeStrategy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +47,12 @@
 		11A6FE162784D987003A8195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11A6FE182784D987003A8195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11A6FE1D2784D987003A8195 /* storyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = storyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		11A6FE212784D987003A8195 /* storyboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storyboardTests.swift; sourceTree = "<group>"; };
+		11A6FE212784D987003A8195 /* ViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTest.swift; sourceTree = "<group>"; };
 		11A6FE272784D987003A8195 /* storyboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = storyboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F02630E7497E6B0240E8948C /* ThreeStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeStrategy.swift; sourceTree = "<group>"; };
+		F02631CAFF02C04809170852 /* FiveStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiveStrategy.swift; sourceTree = "<group>"; };
+		F026350AD71DC91D30AB8E0A /* StrategyProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrategyProtocol.swift; sourceTree = "<group>"; };
+		F0263C397A63FEBF97621DE4 /* FizzyBuzzy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FizzyBuzzy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,10 @@
 				11A6FE132784D987003A8195 /* Assets.xcassets */,
 				11A6FE152784D987003A8195 /* LaunchScreen.storyboard */,
 				11A6FE182784D987003A8195 /* Info.plist */,
+				F0263C397A63FEBF97621DE4 /* FizzyBuzzy.swift */,
+				F02630E7497E6B0240E8948C /* ThreeStrategy.swift */,
+				F02631CAFF02C04809170852 /* FiveStrategy.swift */,
+				F026350AD71DC91D30AB8E0A /* StrategyProtocol.swift */,
 			);
 			path = storyboard;
 			sourceTree = "<group>";
@@ -108,7 +120,7 @@
 		11A6FE202784D987003A8195 /* storyboardTests */ = {
 			isa = PBXGroup;
 			children = (
-				11A6FE212784D987003A8195 /* storyboardTests.swift */,
+				11A6FE212784D987003A8195 /* ViewControllerTest.swift */,
 			);
 			path = storyboardTests;
 			sourceTree = "<group>";
@@ -247,6 +259,10 @@
 				11A6FE0F2784D986003A8195 /* ViewController.swift in Sources */,
 				11A6FE0B2784D986003A8195 /* AppDelegate.swift in Sources */,
 				11A6FE0D2784D986003A8195 /* SceneDelegate.swift in Sources */,
+				F0263DA4FA968D3E81ED170E /* FizzyBuzzy.swift in Sources */,
+				F0263EFA693B75746900ADBB /* ThreeStrategy.swift in Sources */,
+				F02637DE8438CA8D025CEF75 /* FiveStrategy.swift in Sources */,
+				F02636A1EE1E0B201C386829 /* StrategyProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11A6FE222784D987003A8195 /* storyboardTests.swift in Sources */,
+				11A6FE222784D987003A8195 /* ViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,10 +25,11 @@
                                     <action selector="buttonClick" destination="BYZ-38-t0r" eventType="touchUpInside" id="WwM-QE-1Na"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fizzbuzz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZnL-xM-BVw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fizzbuzz" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZnL-xM-BVw">
                                 <rect key="frame" x="172" y="387" width="68" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <accessibility key="accessibilityConfiguration" identifier="main_label"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -45,7 +46,8 @@
                     <connections>
                         <outlet property="button" destination="xQO-BG-x3Y" id="ejX-6S-xzr"/>
                         <outlet property="input" destination="KZV-pu-AIe" id="Y0l-Yz-Jt9"/>
-                        <outlet property="label" destination="ZnL-xM-BVw" id="LN5-nL-E9E"/>
+                        <outlet property="label" destination="ZnL-xM-BVw" id="mu3-fR-exm"/>
+                        <outlet property="testLabel" destination="ZnL-xM-BVw" id="cHX-Wg-fKL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
