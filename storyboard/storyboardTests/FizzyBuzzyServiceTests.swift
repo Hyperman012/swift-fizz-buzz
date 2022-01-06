@@ -35,6 +35,6 @@ class FizzyBuzzyServiceTests: XCTestCase {
        let actualResult = try? JSONDecoder().decode(FizzBuzzReturn.self, from: result.data(using: .utf8)!)
        
        XCTAssertEqual(actualResult, expectedResult)
-       
    }
+
 }

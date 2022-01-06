@@ -1,25 +1,26 @@
 import XCTest
 @testable import storyboard
 
-class JsonHelperTests: XCTestCase {
-    
+class JsonUtf8FacadeTests: XCTestCase {
+    var jsonHelper : JsonUtf8Facade!
     let emptyJson = "{}"
     let jsonWithOptionalData = "{\"optional\":\"something\"}"
 
     override func setUpWithError() throws {
+        jsonHelper = JsonUtf8Facade()
     }
 
     override func tearDownWithError() throws {
+        jsonHelper = nil
+        try super.tearDownWithError()
     }
 
     func testShouldDecodeJsonString() throws {
         // arrange.
-        let jsonHelper = JsonHelper()
-        
         let expectedResult = JsonObjectWithOptionalField()
         
         // act.
-        let result = jsonHelper.decode(emptyJson, JsonObjectWithOptionalField.self)
+        let result = jsonHelper.decodeToType(emptyJson, JsonObjectWithOptionalField.self)
         
         // assert.
         XCTAssertEqual(result, expectedResult)
@@ -27,12 +28,10 @@ class JsonHelperTests: XCTestCase {
     
     func testShouldDecodeJsonStringWithOptionalData() throws {
         // arrange.
-        let jsonHelper = JsonHelper()
-        
         let expectedResult = JsonObjectWithOptionalField(optional: "something")
         
         // act.
-        let result = jsonHelper.decode(jsonWithOptionalData, JsonObjectWithOptionalField.self)
+        let result = jsonHelper.decodeToType(jsonWithOptionalData, JsonObjectWithOptionalField.self)
         
         // assert.
         XCTAssertEqual(result, expectedResult)
@@ -40,14 +39,12 @@ class JsonHelperTests: XCTestCase {
     
     func testShouldDecodeJsonStringWithRequiredData() throws {
         // arrange.
-        let jsonHelper = JsonHelper()
-        
         let jsonString = "{\"required\": \"something\"}"
         
         let expectedResult = JsonObjectWithRequiredField(required: "something")
         
         // act.
-        let result = jsonHelper.decode(jsonString, JsonObjectWithRequiredField.self)
+        let result = jsonHelper.decodeToType(jsonString, JsonObjectWithRequiredField.self)
         
         // assert.
         XCTAssertEqual(result, expectedResult)
@@ -56,33 +53,35 @@ class JsonHelperTests: XCTestCase {
     
     func testShouldDecodeToNilWhenJsonDoesNotMatchType() throws {
         // arrange.
-        let jsonHelper = JsonHelper()
-
         let jsonString = "{\"non-existing-field\": \"something\"}"
 
         // act.
-        let result = jsonHelper.decode(jsonString, JsonObjectWithRequiredField.self)
+        let result = jsonHelper.decodeToType(jsonString, JsonObjectWithRequiredField.self)
 
         // assert.
         XCTAssertNil(result)
     }
     
     func testShouldEncodeEmptyType() throws {
-        let jsonHelper = JsonHelper()
         let toEncode = JsonObjectWithOptionalField()
         
-        let result = jsonHelper.encode(toEncode)
+        let result = try? jsonHelper.encodeToJsonString(toEncode)
         
         XCTAssertEqual(result, emptyJson)
     }
     
     func testShouldEncodeTypeWithData() throws {
-        let jsonHelper = JsonHelper()
         let toEncode = JsonObjectWithOptionalField(optional: "something")
         
-        let result = jsonHelper.encode(toEncode)
+        let result = try? jsonHelper.encodeToJsonString(toEncode)
         
         XCTAssertEqual(result, jsonWithOptionalData)
+    }
+    
+    func testShouldThrowExceptionOnInvalidData() throws {
+        let toEncode = JsonObjectWithFloatField(number: Float.infinity)
+        
+        XCTAssertThrowsError(try jsonHelper.encodeToJsonString(toEncode))
     }
 }
 
@@ -91,4 +90,7 @@ struct JsonObjectWithOptionalField: Codable, Equatable {
 }
 struct JsonObjectWithRequiredField: Codable, Equatable {
     var required: String
+}
+struct JsonObjectWithFloatField: Codable, Equatable {
+    var number: Float
 }

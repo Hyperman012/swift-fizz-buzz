@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1161D256278770AA0031B9F5 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1161D255278770AA0031B9F5 /* test.swift */; };
-		1161D258278771510031B9F5 /* JsonHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1161D257278771510031B9F5 /* JsonHelperTests.swift */; };
-		1161D25A278771D10031B9F5 /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1161D259278771D10031B9F5 /* JsonHelper.swift */; };
+		1161D258278771510031B9F5 /* JsonUtf8FacadeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1161D257278771510031B9F5 /* JsonUtf8FacadeTests.swift */; };
+		1161D25A278771D10031B9F5 /* JsonUtf8Facade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1161D259278771D10031B9F5 /* JsonUtf8Facade.swift */; };
 		11A6FE0B2784D986003A8195 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6FE0A2784D986003A8195 /* AppDelegate.swift */; };
 		11A6FE0D2784D986003A8195 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6FE0C2784D986003A8195 /* SceneDelegate.swift */; };
 		11A6FE0F2784D986003A8195 /* FizzBuzzViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6FE0E2784D986003A8195 /* FizzBuzzViewController.swift */; };
@@ -50,8 +50,8 @@
 
 /* Begin PBXFileReference section */
 		1161D255278770AA0031B9F5 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
-		1161D257278771510031B9F5 /* JsonHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonHelperTests.swift; sourceTree = "<group>"; };
-		1161D259278771D10031B9F5 /* JsonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
+		1161D257278771510031B9F5 /* JsonUtf8FacadeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonUtf8FacadeTests.swift; sourceTree = "<group>"; };
+		1161D259278771D10031B9F5 /* JsonUtf8Facade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonUtf8Facade.swift; sourceTree = "<group>"; };
 		11A6FE072784D986003A8195 /* storyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = storyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A6FE0A2784D986003A8195 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11A6FE0C2784D986003A8195 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,7 +138,7 @@
 				F026351EF96168ECFD936A66 /* FizzBuzzViewModel.swift */,
 				AD2FA738FD46D6B6AF455417 /* FizzBuzzController.swift */,
 				CCC87D9C2787539700BAAF58 /* FizzyBuzzyService.swift */,
-				1161D259278771D10031B9F5 /* JsonHelper.swift */,
+				1161D259278771D10031B9F5 /* JsonUtf8Facade.swift */,
 			);
 			path = storyboard;
 			sourceTree = "<group>";
@@ -146,7 +146,7 @@
 		11A6FE202784D987003A8195 /* storyboardTests */ = {
 			isa = PBXGroup;
 			children = (
-				1161D257278771510031B9F5 /* JsonHelperTests.swift */,
+				1161D257278771510031B9F5 /* JsonUtf8FacadeTests.swift */,
 				848C0AC82787556D0080EE96 /* FizzyBuzzyServiceTests.swift */,
 				CCC87D9A2787361400BAAF58 /* ThreeStrategyTests.swift */,
 				CCC87D98278735FE00BAAF58 /* FiveStrategyTests.swift */,
@@ -292,7 +292,7 @@
 				11A6FE0F2784D986003A8195 /* FizzBuzzViewController.swift in Sources */,
 				11A6FE0B2784D986003A8195 /* AppDelegate.swift in Sources */,
 				11A6FE0D2784D986003A8195 /* SceneDelegate.swift in Sources */,
-				1161D25A278771D10031B9F5 /* JsonHelper.swift in Sources */,
+				1161D25A278771D10031B9F5 /* JsonUtf8Facade.swift in Sources */,
 				F0263DA4FA968D3E81ED170E /* FizzyBuzzy.swift in Sources */,
 				F0263EFA693B75746900ADBB /* ThreeStrategy.swift in Sources */,
 				CCC87D9D2787539700BAAF58 /* FizzyBuzzyService.swift in Sources */,
@@ -312,7 +312,7 @@
 				CCC87D99278735FE00BAAF58 /* FiveStrategyTests.swift in Sources */,
 				848C0AC92787556D0080EE96 /* FizzyBuzzyServiceTests.swift in Sources */,
 				CCC87D9B2787361400BAAF58 /* ThreeStrategyTests.swift in Sources */,
-				1161D258278771510031B9F5 /* JsonHelperTests.swift in Sources */,
+				1161D258278771510031B9F5 /* JsonUtf8FacadeTests.swift in Sources */,
 				CCC87D97278735CB00BAAF58 /* FizzyBuzzyTests.swift in Sources */,
 				1161D256278770AA0031B9F5 /* test.swift in Sources */,
 			);
