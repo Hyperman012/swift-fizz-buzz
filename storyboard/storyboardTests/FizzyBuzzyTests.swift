@@ -9,7 +9,8 @@ class FizzyBuzzyTests: XCTestCase {
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        testObj = nil
+        try super.tearDownWithError()
     }
 
     func testShouldReturnOneForIntOne() {
@@ -59,10 +60,5 @@ class FizzyBuzzyTests: XCTestCase {
 
         XCTAssertEqual(result, "fizzbuzz");
     }
-    
-    func testAsJsonShouldReturnJson() {
-        let result = testObj.calculateAsJson(1)
-        
-        XCTAssertEqual(result, "{\"result\":\"1\"}")
-    }
+
 }
