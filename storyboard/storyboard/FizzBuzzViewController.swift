@@ -1,5 +1,5 @@
 import UIKit
-import fizzBuzzKata
+//import fizzBuzzKata
 
 class FizzBuzzViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
