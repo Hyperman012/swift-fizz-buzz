@@ -2,6 +2,9 @@ import XCTest
 @testable import storyboard
 
 class JsonHelperTests: XCTestCase {
+    
+    let emptyJson = "{}"
+    let jsonWithOptionalData = "{\"optional\":\"something\"}"
 
     override func setUpWithError() throws {
     }
@@ -13,27 +16,23 @@ class JsonHelperTests: XCTestCase {
         // arrange.
         let jsonHelper = JsonHelper()
         
-        let jsonString = "{}"
-        
-        let expectedResult = MyJsonObject()
+        let expectedResult = JsonObjectWithOptionalField()
         
         // act.
-        let result = jsonHelper.decode(jsonString, MyJsonObject.self)
+        let result = jsonHelper.decode(emptyJson, JsonObjectWithOptionalField.self)
         
         // assert.
         XCTAssertEqual(result, expectedResult)
     }
     
-    func testShouldDecodeJsonStringWithData() throws {
+    func testShouldDecodeJsonStringWithOptionalData() throws {
         // arrange.
         let jsonHelper = JsonHelper()
         
-        let jsonString = "{\"data\": \"something\"}"
-        
-        let expectedResult = MyJsonObject(data: "something")
+        let expectedResult = JsonObjectWithOptionalField(optional: "something")
         
         // act.
-        let result = jsonHelper.decode(jsonString, MyJsonObject.self)
+        let result = jsonHelper.decode(jsonWithOptionalData, JsonObjectWithOptionalField.self)
         
         // assert.
         XCTAssertEqual(result, expectedResult)
@@ -55,24 +54,41 @@ class JsonHelperTests: XCTestCase {
     }
     
     
-//    func testShouldReturnNilWhenJsonDoesNotMatchType() throws {
-//        // arrange.
-//        let jsonHelper = JsonHelper()
-//
-//        let jsonString = "{\"non-existing-field\": \"something\"}"
-//
-//        // act.
-//        let result = jsonHelper.decode(jsonString, JsonObjectWithRequiredField.self)
-//
-//        // assert.
-//        XCTAssertNil(result)
-//    }
+    func testShouldDecodeToNilWhenJsonDoesNotMatchType() throws {
+        // arrange.
+        let jsonHelper = JsonHelper()
+
+        let jsonString = "{\"non-existing-field\": \"something\"}"
+
+        // act.
+        let result = jsonHelper.decode(jsonString, JsonObjectWithRequiredField.self)
+
+        // assert.
+        XCTAssertNil(result)
+    }
+    
+    func testShouldEncodeEmptyType() throws {
+        let jsonHelper = JsonHelper()
+        let toEncode = JsonObjectWithOptionalField()
+        
+        let result = jsonHelper.encode(toEncode)
+        
+        XCTAssertEqual(result, emptyJson)
+    }
+    
+    func testShouldEncodeTypeWithData() throws {
+        let jsonHelper = JsonHelper()
+        let toEncode = JsonObjectWithOptionalField(optional: "something")
+        
+        let result = jsonHelper.encode(toEncode)
+        
+        XCTAssertEqual(result, jsonWithOptionalData)
+    }
 }
 
-public struct MyJsonObject: Codable, Equatable {
-    var data: String?
+struct JsonObjectWithOptionalField: Codable, Equatable {
+    var optional: String?
 }
 struct JsonObjectWithRequiredField: Codable, Equatable {
     var required: String
 }
-
