@@ -18,5 +18,9 @@ class WeatherServiceTests: XCTestCase {
         
         XCTAssertNotNil(currentWeather)
     }
+    
+    b1605dacb10c42feab34a04fd0531567
+    
+    api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
 
 }
