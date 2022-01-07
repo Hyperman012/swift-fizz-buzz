@@ -2,25 +2,57 @@ import XCTest
 @testable import storyboard
 
 class WeatherServiceTests: XCTestCase {
+    var weatherService: WeatherService!
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        weatherService = WeatherService()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
     }
 
-    func testExample() throws {
-        let weatherService = WeatherService()
+    func testSeattleShouldReturnRain() async throws {
+        let currentWeather = await weatherService.getCurrentWeather("Seattle")
         
-        let currentWeather = weatherService.getCurrentWeather("Seattle")
+        XCTAssertEqual("rain", currentWeather)
         
-        XCTAssertNotNil(currentWeather)
     }
     
-    b1605dacb10c42feab34a04fd0531567
+    func testBuffaloShouldReturnSnow() async throws {
+        let currentWeather = await weatherService.getCurrentWeather("Buffalo")
+        
+        XCTAssertEqual("snow", currentWeather)
+    }
     
-    api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
-
+    func testBlankcityReturnEmptyString() async throws {
+        let currentWeather = await weatherService.getCurrentWeather("")
+        
+        XCTAssertEqual("", currentWeather)
+    }
+    
+    func testGetSeattleWeatherReport() async throws {
+        //arrange
+        let expectedName = "Seattle"
+        
+        //act
+        let actualReport = await weatherService.getWeatherReport()
+        
+        //assert
+        XCTAssertEqual(actualReport.name, expectedName)
+        XCTAssertNotNil(actualReport.currentCondition)
+    }
+    
+    func testGetBuffaloWeatherReport() async throws {
+        //arrange
+        let expectedName = "Buffalo"
+        
+        //act
+        let actualReport = await weatherService.getWeatherReport(expectedName)
+        
+        //assert
+        XCTAssertEqual(actualReport.name, expectedName)
+        XCTAssertNotNil(actualReport.currentCondition)
+    }
+    
 }

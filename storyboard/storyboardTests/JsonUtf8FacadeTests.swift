@@ -26,6 +26,19 @@ class JsonUtf8FacadeTests: XCTestCase {
         XCTAssertEqual(result, expectedResult)
     }
     
+    func testShouldDecodeJsonData() throws {
+        // arrange.
+        let expectedResult = JsonObjectWithOptionalField()
+        
+        let data = emptyJson.data(using: .utf8)!
+        
+        // act.
+        let result = jsonHelper.decodeToType(data, JsonObjectWithOptionalField.self)
+        
+        // assert.
+        XCTAssertEqual(result, expectedResult)
+    }
+    
     func testShouldDecodeJsonStringWithOptionalData() throws {
         // arrange.
         let expectedResult = JsonObjectWithOptionalField(optional: "something")
