@@ -23,6 +23,8 @@
 		CCC87D99278735FE00BAAF58 /* FiveStrategyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC87D98278735FE00BAAF58 /* FiveStrategyTests.swift */; };
 		CCC87D9B2787361400BAAF58 /* ThreeStrategyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC87D9A2787361400BAAF58 /* ThreeStrategyTests.swift */; };
 		CCC87D9D2787539700BAAF58 /* FizzyBuzzyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC87D9C2787539700BAAF58 /* FizzyBuzzyService.swift */; };
+		CCC87D9F278894FF00BAAF58 /* WeatherServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC87D9E278894FF00BAAF58 /* WeatherServiceTests.swift */; };
+		CCC87DA12788961D00BAAF58 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC87DA02788961D00BAAF58 /* WeatherService.swift */; };
 		F02636A1EE1E0B201C386829 /* StrategyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F026350AD71DC91D30AB8E0A /* StrategyProtocol.swift */; };
 		F02637DE8438CA8D025CEF75 /* FiveStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02631CAFF02C04809170852 /* FiveStrategy.swift */; };
 		F026388FFD895BA3750E4725 /* FizzBuzzControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0263126FFD720D62C1F2675 /* FizzBuzzControllerTest.swift */; };
@@ -69,6 +71,8 @@
 		CCC87D98278735FE00BAAF58 /* FiveStrategyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiveStrategyTests.swift; sourceTree = "<group>"; };
 		CCC87D9A2787361400BAAF58 /* ThreeStrategyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeStrategyTests.swift; sourceTree = "<group>"; };
 		CCC87D9C2787539700BAAF58 /* FizzyBuzzyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzyBuzzyService.swift; sourceTree = "<group>"; };
+		CCC87D9E278894FF00BAAF58 /* WeatherServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceTests.swift; sourceTree = "<group>"; };
+		CCC87DA02788961D00BAAF58 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		F02630E7497E6B0240E8948C /* ThreeStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeStrategy.swift; sourceTree = "<group>"; };
 		F0263126FFD720D62C1F2675 /* FizzBuzzControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FizzBuzzControllerTest.swift; sourceTree = "<group>"; };
 		F02631CAFF02C04809170852 /* FiveStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiveStrategy.swift; sourceTree = "<group>"; };
@@ -139,6 +143,7 @@
 				AD2FA738FD46D6B6AF455417 /* FizzBuzzController.swift */,
 				CCC87D9C2787539700BAAF58 /* FizzyBuzzyService.swift */,
 				1161D259278771D10031B9F5 /* JsonUtf8Facade.swift */,
+				CCC87DA02788961D00BAAF58 /* WeatherService.swift */,
 			);
 			path = storyboard;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 		11A6FE202784D987003A8195 /* storyboardTests */ = {
 			isa = PBXGroup;
 			children = (
+				CCC87D9E278894FF00BAAF58 /* WeatherServiceTests.swift */,
 				1161D257278771510031B9F5 /* JsonUtf8FacadeTests.swift */,
 				848C0AC82787556D0080EE96 /* FizzyBuzzyServiceTests.swift */,
 				CCC87D9A2787361400BAAF58 /* ThreeStrategyTests.swift */,
@@ -293,6 +299,7 @@
 				11A6FE0B2784D986003A8195 /* AppDelegate.swift in Sources */,
 				11A6FE0D2784D986003A8195 /* SceneDelegate.swift in Sources */,
 				1161D25A278771D10031B9F5 /* JsonUtf8Facade.swift in Sources */,
+				CCC87DA12788961D00BAAF58 /* WeatherService.swift in Sources */,
 				F0263DA4FA968D3E81ED170E /* FizzyBuzzy.swift in Sources */,
 				F0263EFA693B75746900ADBB /* ThreeStrategy.swift in Sources */,
 				CCC87D9D2787539700BAAF58 /* FizzyBuzzyService.swift in Sources */,
@@ -315,6 +322,7 @@
 				1161D258278771510031B9F5 /* JsonUtf8FacadeTests.swift in Sources */,
 				CCC87D97278735CB00BAAF58 /* FizzyBuzzyTests.swift in Sources */,
 				1161D256278770AA0031B9F5 /* test.swift in Sources */,
+				CCC87D9F278894FF00BAAF58 /* WeatherServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -61,4 +61,63 @@ class FizzyBuzzyTests: XCTestCase {
         XCTAssertEqual(result, "fizzbuzz");
     }
 
+    func testShouldReturnOneForIntOneUsingStubsProtocol() {
+        testObj = FizzyBuzzy(FalseStrategyProtocol(), FalseStrategyProtocol())
+
+        let result = testObj.calculate(1);
+
+        XCTAssertEqual(result, "1");
+    }
+    
+    func testShouldReturn3For3UsingStubsOverride() {
+        testObj = FizzyBuzzy(ThreeStrategyStub(), FalseStrategyProtocol())
+
+        let result = testObj.calculate(3);
+
+        XCTAssertEqual(result, "3");
+    }
+    
+    func testShouldReturnFizzFor3UsingSpy() {
+        
+        let spy = ThreeStrategySpy()
+        testObj = FizzyBuzzy(spy, FalseStrategyProtocol())
+
+        let _ = testObj.calculate(3);
+
+        XCTAssertEqual(spy.timesCalled, 2);
+    }
+}
+
+class TrueStrategyProtocol: StrategyProtocol {
+    func evaluate(_ input: Int) -> Bool {
+        true
+    }
+}
+
+class FalseStrategyProtocol: StrategyProtocol {
+    func evaluate(_ input: Int) -> Bool {
+        false
+    }
+}
+
+class ThreeStrategyStub : ThreeStrategy {
+    override func evaluate(_ input: Int) -> Bool {
+
+        if (input % 3 == 0) {
+            return false
+        }
+        
+        return true
+    }
+}
+
+class ThreeStrategySpy : ThreeStrategy {
+    var timesCalled = 0
+    override func evaluate(_ input: Int) -> Bool {
+
+        timesCalled+=1
+        
+        return super.evaluate(input);
+        
+    }
 }
