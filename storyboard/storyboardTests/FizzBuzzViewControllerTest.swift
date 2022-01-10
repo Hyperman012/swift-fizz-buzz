@@ -33,14 +33,41 @@ class FizzBuzzViewControllerTest: XCTestCase {
         XCTAssertEqual(viewController.currentWeather.accessibilityIdentifier, "currentWeather")
     }
 
-    func testShouldUpdateWeatherOnViewDidLoad() throws {
+    @MainActor func testShouldUpdateWeatherOnViewDidLoad() async throws {
         // arrange.
         let expectedWeather = "expectedWeather"
+        let weatherService = WeatherService(StubHTTPClient(name: "", currentCondition: expectedWeather))
 
         // act.
+        let viewController = getViewController(weatherService)
+        await viewController.getAndSetCurrentWeather()
 
         // assert.
-        //XCTAssertEqual(viewController.currentWeather.text, expectedWeather)
+        XCTAssertEqual(viewController.currentWeather.text, expectedWeather)
+    }
+
+    @MainActor func testShouldUseWeatherService() async throws {
+        // arrange.
+        let expectedWeather = "Im in Use"
+        let weatherService = WeatherService(StubHTTPClient(name: "", currentCondition: expectedWeather))
+
+        // act.
+        let viewController = getViewController(weatherService)
+        await viewController.getAndSetCurrentWeather()
+
+        // assert.
+        XCTAssertEqual(viewController.currentWeather.text, expectedWeather)
+    }
+
+    func getViewController(_ weatherService: WeatherService) -> FizzBuzzViewController {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+
+        viewController = storyboard.instantiateViewController(identifier: String(describing: FizzBuzzViewController.self)) { coder in
+            FizzBuzzViewController(coder: coder, weatherService)
+        }
+        viewController.loadViewIfNeeded()
+
+        return viewController
     }
 
     func testButtonPressShouldUpdateUi() throws {
