@@ -29,6 +29,20 @@ class FizzBuzzViewControllerTest: XCTestCase {
         XCTAssertEqual(viewController.input.accessibilityIdentifier, "input")
     }
 
+    func testShouldBindCurrentCondition() throws {
+        XCTAssertEqual(viewController.currentWeather.accessibilityIdentifier, "currentWeather")
+    }
+
+    func testShouldUpdateWeatherOnViewDidLoad() throws {
+        // arrange.
+        let expectedWeather = "expectedWeather"
+
+        // act.
+
+        // assert.
+        //XCTAssertEqual(viewController.currentWeather.text, expectedWeather)
+    }
+
     func testButtonPressShouldUpdateUi() throws {
         viewController.input.text = "1"
 

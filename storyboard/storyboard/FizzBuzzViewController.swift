@@ -5,6 +5,7 @@ class FizzBuzzViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     @IBOutlet private(set) var button: UIButton!
 
+    @IBOutlet weak var currentWeather: UILabel!
     @IBOutlet weak var input: UITextField!
 
     override func viewDidLoad() {
