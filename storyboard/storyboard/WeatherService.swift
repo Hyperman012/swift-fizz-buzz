@@ -1,13 +1,13 @@
 import Foundation
 
-class WeatherService {
+public class WeatherService {
     let httpClient: HttpClient
 
     public convenience init() {
         self.init(HttpClient())
     }
 
-    public init(_ httpClient: HttpClient) {
+    init(_ httpClient: HttpClient) {
         self.httpClient = httpClient
     }
 

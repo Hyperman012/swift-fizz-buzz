@@ -19,9 +19,6 @@ class FizzBuzzViewController: UIViewController {
     }
 
     override func viewDidLoad() {
-        let weatherViewModel = WeatherController().buildViewModel()
-        currentWeather.text = weatherViewModel.currentCondition
-
         let task = Task.detached(priority: TaskPriority.userInitiated) { [self] in
             await getAndSetCurrentWeather()
         }
@@ -29,12 +26,8 @@ class FizzBuzzViewController: UIViewController {
     }
 
     func getAndSetCurrentWeather() async {
-        let weather = await weatherService.getWeatherReport()
-        setCurrentCondition(weather: weather)
-    }
-
-    private func setCurrentCondition(weather: WeatherReport) {
-        currentWeather.text = weather.currentCondition
+        let weatherViewModel = await WeatherController().buildViewModel(weatherService)
+        currentWeather.text = weatherViewModel.currentCondition
     }
 
     @IBAction func buttonClick() {
