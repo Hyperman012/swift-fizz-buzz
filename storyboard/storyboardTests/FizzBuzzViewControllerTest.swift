@@ -32,6 +32,9 @@ class FizzBuzzViewControllerTest: XCTestCase {
     func testShouldBindCurrentCondition() throws {
         XCTAssertEqual(viewController.currentWeather.accessibilityIdentifier, "currentWeather")
     }
+    func testShouldBindCurrentCity() throws {
+        XCTAssertEqual(viewController.currentCity.accessibilityIdentifier, "currentCity")
+    }
 
     @MainActor func testShouldUpdateWeatherOnViewDidLoad() async throws {
         // arrange.

@@ -8,6 +8,8 @@ class FizzBuzzViewController: UIViewController {
     @IBOutlet weak var input: UITextField!
     let weatherService: WeatherService;
 
+   @IBOutlet weak var currentCity : UILabel!
+
     init?(coder: NSCoder, _ service: WeatherService) {
         weatherService = service
         super.init(coder: coder)
