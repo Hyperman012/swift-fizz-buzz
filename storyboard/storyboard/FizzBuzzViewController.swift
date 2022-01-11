@@ -1,14 +1,14 @@
 import UIKit
 
 class FizzBuzzViewController: UIViewController {
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet var label: UILabel!
     @IBOutlet private(set) var button: UIButton!
 
-    @IBOutlet weak var currentWeather: UILabel!
-    @IBOutlet weak var input: UITextField!
+    @IBOutlet var currentWeather: UILabel!
+    @IBOutlet var input: UITextField!
     let weatherService: WeatherService;
 
-   @IBOutlet weak var currentCity : UILabel!
+    @IBOutlet var currentCity : UILabel!
 
     init?(coder: NSCoder, _ service: WeatherService) {
         weatherService = service
