@@ -2,7 +2,7 @@ import XCTest
 import Foundation
 
 
-class Observer {
+class NotificationCenterObserver {
     var subscriber: Any!
     var latestMessage = ""
 
@@ -24,7 +24,7 @@ class Observer {
     }
 }
 
-class ObserverTests: XCTestCase {
+class NotificationCenterObserverTests: XCTestCase {
 
     public func testShouldAddNotification() {
         // arrange.
@@ -35,7 +35,7 @@ class ObserverTests: XCTestCase {
         let notification = XCTNSNotificationExpectation(name: notificationName, object: expectedMessage)
 
         // act.
-        Observer().addMessage(expectedMessage)
+        NotificationCenterObserver().addMessage(expectedMessage)
 
         // assert.
         let result = XCTWaiter.wait(for: [notification], timeout: 1)
@@ -49,7 +49,7 @@ class ObserverTests: XCTestCase {
         let notificationName = NSNotification.Name("m1")
         let notification = XCTNSNotificationExpectation(name: notificationName, object: expectedMessage)
 
-        let observer = Observer()
+        let observer = NotificationCenterObserver()
         observer.addMessage(expectedMessage)
         _ = XCTWaiter.wait(for: [notification], timeout: 1)
 
