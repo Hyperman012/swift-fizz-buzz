@@ -1,8 +1,14 @@
 import Foundation
 
 public class WeatherController {
-    public func buildViewModel(_ weatherService: WeatherService) async -> WeatherViewModel {
+    private let viewModel: WeatherViewModel
+
+    init(_ viewModel: WeatherViewModel) {
+        self.viewModel = viewModel
+    }
+
+    public func buildViewModel(_ weatherService: WeatherService) async {
         let currentCondition = await weatherService.getWeatherReport().currentCondition
-        return WeatherViewModel(currentCondition: currentCondition)
+        viewModel.currentCondition = currentCondition
     }
 }

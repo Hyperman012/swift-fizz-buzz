@@ -9,19 +9,24 @@ class FizzBuzzViewController: UIViewController {
     @IBOutlet var input: UITextField!
     let weatherService: WeatherService;
 
+
     @IBOutlet var currentCity : UILabel!
 
     public let viewModel = WeatherViewModel(currentCondition: "Stormy")
+    private let weatherController: WeatherController
 
     public var observers: [AnyCancellable] = []
 
     init?(coder: NSCoder, _ service: WeatherService) {
         weatherService = service
+        weatherController = WeatherController(viewModel)
         super.init(coder: coder)
     }
 
     required init?(coder: NSCoder) {
         weatherService = WeatherService()
+        weatherController = WeatherController(viewModel)
+
         super.init(coder: coder)
     }
 
@@ -35,8 +40,7 @@ class FizzBuzzViewController: UIViewController {
     }
 
     func getAndSetCurrentWeather() async {
-        let weatherViewModel = await WeatherController().buildViewModel(weatherService)
-        currentWeather.text = weatherViewModel.currentCondition
+        _ = await weatherController.buildViewModel(weatherService)
     }
 
     @IBAction func buttonClick() {
