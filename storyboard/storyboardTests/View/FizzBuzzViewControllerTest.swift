@@ -45,8 +45,16 @@ class FizzBuzzViewControllerTest: XCTestCase {
         let viewController = getViewController(weatherService)
         await viewController.getAndSetCurrentWeather()
 
+        flushScheduledQueue(viewController)
+
         // assert.
         XCTAssertEqual(viewController.currentWeather.text, expectedWeather)
+    }
+
+    private func flushScheduledQueue(_ viewController: FizzBuzzViewController) {
+        viewController.scheduler.sync {
+
+        }
     }
 
     @MainActor func testShouldUseWeatherService() async throws {
@@ -57,6 +65,8 @@ class FizzBuzzViewControllerTest: XCTestCase {
         // act.
         let viewController = getViewController(weatherService)
         await viewController.getAndSetCurrentWeather()
+
+        flushScheduledQueue(viewController)
 
         // assert.
         XCTAssertEqual(viewController.currentWeather.text, expectedWeather)
@@ -83,10 +93,15 @@ class FizzBuzzViewControllerTest: XCTestCase {
     }
 
     func testShouldWireWeatherToView() throws {
+        // arrange.
+        let viewController = getViewController(WeatherService())
+
         // act.
         viewController.viewModel.currentCondition = "blah"
 
+        flushScheduledQueue(viewController)
+
         // assert.
-        XCTAssertEqual(viewController.currentWeather.text, viewController.viewModel.currentCondition)
+        XCTAssertEqual(viewController.currentWeather.text, "blah")
     }
 }
