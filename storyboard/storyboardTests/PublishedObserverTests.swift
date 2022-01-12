@@ -2,9 +2,9 @@ import Foundation
 import XCTest
 
 class PublishedObservable: ObservableObject {
-    @Published var data: String?
+    @Published var data: String = ""
 
-    @Published var otherData: String?
+    @Published var otherData: String = ""
 
     public func updateData() async {
         data = "message"
@@ -13,6 +13,10 @@ class PublishedObservable: ObservableObject {
     func updateOtherData() async {
         otherData = "something"
     }
+}
+
+class Observer {
+    var observedData: String = ""
 }
 
 class PublishedObserverTests: XCTestCase {
@@ -94,5 +98,20 @@ class PublishedObserverTests: XCTestCase {
 
         //assert
         XCTAssertEqual(called, 1)
+    }
+
+    func testAssignTo() {
+        //arrange.
+        let publisher = PublishedObservable()
+        let observed = Observer()
+
+        let cancellable = publisher.$data.assign(to: \.observedData, on: observed)
+
+        //act.
+        publisher.data = "Im updated"
+
+        //assert
+        XCTAssertEqual(observed.observedData, "Im updated")
+
     }
 }
