@@ -81,4 +81,12 @@ class FizzBuzzViewControllerTest: XCTestCase {
         XCTAssertEqual(viewController.label.text, "1")
         XCTAssertNil(viewController.label.backgroundColor)
     }
+
+    func testShouldWireWeatherToView() throws {
+        // act.
+        viewController.viewModel.currentCondition = "blah"
+
+        // assert.
+        XCTAssertEqual(viewController.currentWeather.text, viewController.viewModel.currentCondition)
+    }
 }

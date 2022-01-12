@@ -1,4 +1,5 @@
 import UIKit
+import Combine
 
 class FizzBuzzViewController: UIViewController {
     @IBOutlet var label: UILabel!
@@ -9,6 +10,10 @@ class FizzBuzzViewController: UIViewController {
     let weatherService: WeatherService;
 
     @IBOutlet var currentCity : UILabel!
+
+    public let viewModel = WeatherViewModel(currentCondition: "Stormy")
+
+    public var observers: [AnyCancellable] = []
 
     init?(coder: NSCoder, _ service: WeatherService) {
         weatherService = service
@@ -25,6 +30,8 @@ class FizzBuzzViewController: UIViewController {
             await getAndSetCurrentWeather()
         }
         super.viewDidLoad()
+
+        viewModel.$currentCondition.assign(to: \.text, on: currentWeather).store(in: &observers)
     }
 
     func getAndSetCurrentWeather() async {

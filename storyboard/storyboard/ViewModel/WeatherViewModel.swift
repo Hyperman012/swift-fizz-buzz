@@ -1,5 +1,9 @@
 import Foundation
 
-public struct WeatherViewModel {
-    public let currentCondition: String
+public class WeatherViewModel: ObservableObject {
+    @Published public var currentCondition: String?
+
+    public init(currentCondition: String) {
+        self.currentCondition = currentCondition
+    }
 }
