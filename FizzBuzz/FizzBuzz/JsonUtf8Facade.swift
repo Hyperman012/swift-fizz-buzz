@@ -1,6 +1,8 @@
 import Foundation
 
 public class JsonUtf8Facade {
+    public init() {}
+    
     public func decodeToType<T>(_ json: String, _ type: T.Type) -> T? where T: Decodable {
         self.decodeToType(json.data(using: .utf8)!, type)
     }

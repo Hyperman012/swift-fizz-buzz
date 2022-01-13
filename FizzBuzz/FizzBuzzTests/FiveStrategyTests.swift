@@ -1,6 +1,5 @@
 import XCTest
-import FizzBuzz
-@testable import storyboard
+@testable import FizzBuzz
 
 class FiveStrategyTests: XCTestCase {
 

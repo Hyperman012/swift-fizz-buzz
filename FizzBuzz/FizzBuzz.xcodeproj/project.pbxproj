@@ -11,12 +11,14 @@
 		11D73E3A2790A86100C84077 /* ThreeStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D73E392790A86000C84077 /* ThreeStrategy.swift */; };
 		11D73E3B2790A86100C84077 /* FizzyBuzzy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D73E382790A86000C84077 /* FizzyBuzzy.swift */; };
 		CC5C9B1627907D42004324B4 /* FizzBuzz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5C9B0B27907D42004324B4 /* FizzBuzz.framework */; };
-		CC5C9B1B27907D42004324B4 /* FizzBuzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C9B1A27907D42004324B4 /* FizzBuzzTests.swift */; };
 		CC5C9B1C27907D42004324B4 /* FizzBuzz.h in Headers */ = {isa = PBXBuildFile; fileRef = CC5C9B0E27907D42004324B4 /* FizzBuzz.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CC5C9B3427907DC6004324B4 /* StrategyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C9B3327907DC6004324B4 /* StrategyProtocol.swift */; };
 		CC5C9B382790AA0A004324B4 /* FizzyBuzzyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C9B362790AA0A004324B4 /* FizzyBuzzyTests.swift */; };
 		CC5C9B3A2790AA0A004324B4 /* ThreeStrategyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C9B352790AA09004324B4 /* ThreeStrategyTests.swift */; };
 		CC5C9B3C2790AA1C004324B4 /* FiveStrategyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C9B3B2790AA1C004324B4 /* FiveStrategyTests.swift */; };
+		CC5C9B3E2790ABA8004324B4 /* JsonUtf8Facade.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C9B3D2790ABA8004324B4 /* JsonUtf8Facade.swift */; };
+		CC5C9B402790ABAE004324B4 /* FizzyBuzzyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C9B3F2790ABAE004324B4 /* FizzyBuzzyService.swift */; };
+		CC5C9B422790AD35004324B4 /* FizzyBuzzyServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C9B412790AD35004324B4 /* FizzyBuzzyServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +38,13 @@
 		CC5C9B0B27907D42004324B4 /* FizzBuzz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FizzBuzz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC5C9B0E27907D42004324B4 /* FizzBuzz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FizzBuzz.h; sourceTree = "<group>"; };
 		CC5C9B1527907D42004324B4 /* FizzBuzzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzBuzzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC5C9B1A27907D42004324B4 /* FizzBuzzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzTests.swift; sourceTree = "<group>"; };
 		CC5C9B3327907DC6004324B4 /* StrategyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrategyProtocol.swift; sourceTree = "<group>"; };
 		CC5C9B352790AA09004324B4 /* ThreeStrategyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeStrategyTests.swift; sourceTree = "<group>"; };
 		CC5C9B362790AA0A004324B4 /* FizzyBuzzyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FizzyBuzzyTests.swift; sourceTree = "<group>"; };
 		CC5C9B3B2790AA1C004324B4 /* FiveStrategyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiveStrategyTests.swift; sourceTree = "<group>"; };
+		CC5C9B3D2790ABA8004324B4 /* JsonUtf8Facade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonUtf8Facade.swift; sourceTree = "<group>"; };
+		CC5C9B3F2790ABAE004324B4 /* FizzyBuzzyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FizzyBuzzyService.swift; sourceTree = "<group>"; };
+		CC5C9B412790AD35004324B4 /* FizzyBuzzyServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FizzyBuzzyServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 		CC5C9B0D27907D42004324B4 /* FizzBuzz */ = {
 			isa = PBXGroup;
 			children = (
+				CC5C9B3D2790ABA8004324B4 /* JsonUtf8Facade.swift */,
+				CC5C9B3F2790ABAE004324B4 /* FizzyBuzzyService.swift */,
 				11D73E362790A7D200C84077 /* FiveStrategy.swift */,
 				11D73E382790A86000C84077 /* FizzyBuzzy.swift */,
 				11D73E392790A86000C84077 /* ThreeStrategy.swift */,
@@ -95,10 +101,10 @@
 		CC5C9B1927907D42004324B4 /* FizzBuzzTests */ = {
 			isa = PBXGroup;
 			children = (
+				CC5C9B412790AD35004324B4 /* FizzyBuzzyServiceTests.swift */,
 				CC5C9B3B2790AA1C004324B4 /* FiveStrategyTests.swift */,
 				CC5C9B362790AA0A004324B4 /* FizzyBuzzyTests.swift */,
 				CC5C9B352790AA09004324B4 /* ThreeStrategyTests.swift */,
-				CC5C9B1A27907D42004324B4 /* FizzBuzzTests.swift */,
 			);
 			path = FizzBuzzTests;
 			sourceTree = "<group>";
@@ -215,7 +221,9 @@
 				11D73E372790A7D200C84077 /* FiveStrategy.swift in Sources */,
 				11D73E3A2790A86100C84077 /* ThreeStrategy.swift in Sources */,
 				CC5C9B3427907DC6004324B4 /* StrategyProtocol.swift in Sources */,
+				CC5C9B402790ABAE004324B4 /* FizzyBuzzyService.swift in Sources */,
 				11D73E3B2790A86100C84077 /* FizzyBuzzy.swift in Sources */,
+				CC5C9B3E2790ABA8004324B4 /* JsonUtf8Facade.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC5C9B3C2790AA1C004324B4 /* FiveStrategyTests.swift in Sources */,
-				CC5C9B1B27907D42004324B4 /* FizzBuzzTests.swift in Sources */,
+				CC5C9B422790AD35004324B4 /* FizzyBuzzyServiceTests.swift in Sources */,
 				CC5C9B3A2790AA0A004324B4 /* ThreeStrategyTests.swift in Sources */,
 				CC5C9B382790AA0A004324B4 /* FizzyBuzzyTests.swift in Sources */,
 			);

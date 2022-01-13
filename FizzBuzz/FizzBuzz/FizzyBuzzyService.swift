@@ -1,8 +1,9 @@
 import Foundation
-import FizzBuzz
 
-class FizzyBuzzyService {
+public class FizzyBuzzyService {
     let fizzBuzz = FizzyBuzzy()
+    
+    public init() {}
     
     public func calculateAsJson(_ input: String) -> String {
         let jsonUtf8Facade = JsonUtf8Facade()

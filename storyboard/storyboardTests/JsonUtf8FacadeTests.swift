@@ -1,4 +1,5 @@
 import XCTest
+import FizzBuzz
 @testable import storyboard
 
 class JsonUtf8FacadeTests: XCTestCase {

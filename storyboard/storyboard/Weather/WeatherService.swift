@@ -1,4 +1,5 @@
 import Foundation
+import FizzBuzz
 
 public class WeatherService {
     let httpClient: HttpClient

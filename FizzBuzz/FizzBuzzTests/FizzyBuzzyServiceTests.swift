@@ -1,5 +1,6 @@
 import XCTest
-@testable import storyboard
+import Foundation
+@testable import FizzBuzz
 
 class FizzyBuzzyServiceTests: XCTestCase {
     var service: FizzyBuzzyService!
