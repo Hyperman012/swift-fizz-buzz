@@ -1,10 +1,3 @@
-//
-//  FizzBuzz.h
-//  FizzBuzz
-//
-//  Created by Kevin Sivic on 1/13/22.
-//
-
 #import <Foundation/Foundation.h>
 
 //! Project version number for FizzBuzz.

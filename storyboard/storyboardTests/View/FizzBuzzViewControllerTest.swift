@@ -54,7 +54,7 @@ class FizzBuzzViewControllerTest: XCTestCase {
     private func flushScheduledQueue(_ viewController: FizzBuzzViewController) {
         viewController.scheduler.sync {
 
-        }
+        }	
     }
 
     @MainActor func testShouldUseWeatherService() async throws {
