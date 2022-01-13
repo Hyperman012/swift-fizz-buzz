@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:storyboard/storyboard.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:fizzBuzzKata.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:FizzBuzz/FizzBuzz.xcodeproj">
    </FileRef>
 </Workspace>
