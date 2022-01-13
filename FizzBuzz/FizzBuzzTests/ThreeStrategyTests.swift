@@ -1,4 +1,5 @@
 import XCTest
+import FizzBuzz
 @testable import storyboard
 
 class ThreeStrategyTests: XCTestCase {

@@ -1,4 +1,5 @@
 import Foundation
+import FizzBuzz
 
 class FizzyBuzzyService {
     let fizzBuzz = FizzyBuzzy()

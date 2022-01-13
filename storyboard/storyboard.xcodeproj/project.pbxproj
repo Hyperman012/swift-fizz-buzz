@@ -18,24 +18,19 @@
 		AD2FA10026BCB216AF91072B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD2FACBB6C6B9BF56C834497 /* Main.storyboard */; };
 		AD2FA10C99A6AB8270F28017 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2FAA3B0F18CC2D1BB99D0B /* WeatherViewModel.swift */; };
 		AD2FA4B8542ED860D0EDDD63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD2FA43C7F20B752F6151757 /* LaunchScreen.storyboard */; };
-		AD2FA5054FF5B90D767AB380 /* ThreeStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2FA4187D663B2F55B919BB /* ThreeStrategy.swift */; };
 		AD2FA5C0856292D099944F8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2FA42A6A90258A596998B5 /* SceneDelegate.swift */; };
 		AD2FA705C1DD8B558B6F8549 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2FABE9E05027A8B46C749D /* AppDelegate.swift */; };
 		AD2FA8075F352574887AE339 /* FizzBuzzViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2FAD47F8DDCF9617588466 /* FizzBuzzViewController.swift */; };
 		AD2FAA6E3100EF197553EF38 /* NotificationCenterObserverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2FAC85CABCFAA67196E07A /* NotificationCenterObserverTests.swift */; };
-		AD2FAAAE16B421D6BBDBE2EB /* FizzyBuzzy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2FA19FA5F4BCFA3496720E /* FizzyBuzzy.swift */; };
 		AD2FADC8F11764F6B8599B27 /* FizzBuzzViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2FAA6FB45193A5C3247DC3 /* FizzBuzzViewModel.swift */; };
 		AD2FAE528602FC581D467852 /* FizzBuzzViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2FA15085F8A36DF7584349 /* FizzBuzzViewControllerTest.swift */; };
-		F02631F9CEED3141764111A7 /* FiveStrategyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0263A755B8144AFE031009F /* FiveStrategyTests.swift */; };
 		F026320D96BB543F18896E78 /* WeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F026324B6672849FC6F81CD7 /* WeatherController.swift */; };
 		F026320D9BAA7B2B88EDE746 /* WeatherReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0263F06B0CEBAE144A1BC5A /* WeatherReport.swift */; };
 		F02632D1B6457F39E627D9BB /* FizzBuzzControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0263907977178B3FEA39552 /* FizzBuzzControllerTest.swift */; };
 		F026364BAE68A5728CF94771 /* WeatherServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F026354C2D642286A833AFDF /* WeatherServiceTests.swift */; };
 		F026378A496D6B1764E3E6D1 /* FizzBuzzController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0263D62A1D490DB71770013 /* FizzBuzzController.swift */; };
 		F02638566B49E1B4868F0D1F /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0263F09DDD8E99CE5B36F74 /* HttpClient.swift */; };
-		F0263C75FA3D489E155F969D /* FizzyBuzzyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F026367EADECB144B0A2F334 /* FizzyBuzzyTests.swift */; };
 		F0263CEBC8D1C849F3371F47 /* FizzyBuzzyServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0263DA561A02771FE00AD71 /* FizzyBuzzyServiceTests.swift */; };
-		F0263CFE7E232B26D7857E15 /* ThreeStrategyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0263792D5D74D7896D7EDC4 /* ThreeStrategyTests.swift */; };
 		F0263E7DE412CD28CE36F5FB /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02630C6DED1FB6139FC73CE /* WeatherService.swift */; };
 /* End PBXBuildFile section */
 
@@ -83,8 +78,6 @@
 		2D9B8B27FF6BB2C5EB30AD31 /* PublishedObserverTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishedObserverTests.swift; sourceTree = "<group>"; };
 		AD2FA145663E6C04DFBAD11A /* FizzyBuzzyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FizzyBuzzyService.swift; sourceTree = "<group>"; };
 		AD2FA15085F8A36DF7584349 /* FizzBuzzViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FizzBuzzViewControllerTest.swift; sourceTree = "<group>"; };
-		AD2FA19FA5F4BCFA3496720E /* FizzyBuzzy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FizzyBuzzy.swift; sourceTree = "<group>"; };
-		AD2FA4187D663B2F55B919BB /* ThreeStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeStrategy.swift; sourceTree = "<group>"; };
 		AD2FA42A6A90258A596998B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AD2FA43C7F20B752F6151757 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD2FAA3B0F18CC2D1BB99D0B /* WeatherViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
@@ -96,10 +89,7 @@
 		F02630C6DED1FB6139FC73CE /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		F026324B6672849FC6F81CD7 /* WeatherController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherController.swift; sourceTree = "<group>"; };
 		F026354C2D642286A833AFDF /* WeatherServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherServiceTests.swift; sourceTree = "<group>"; };
-		F026367EADECB144B0A2F334 /* FizzyBuzzyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FizzyBuzzyTests.swift; sourceTree = "<group>"; };
-		F0263792D5D74D7896D7EDC4 /* ThreeStrategyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeStrategyTests.swift; sourceTree = "<group>"; };
 		F0263907977178B3FEA39552 /* FizzBuzzControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FizzBuzzControllerTest.swift; sourceTree = "<group>"; };
-		F0263A755B8144AFE031009F /* FiveStrategyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiveStrategyTests.swift; sourceTree = "<group>"; };
 		F0263D62A1D490DB71770013 /* FizzBuzzController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FizzBuzzController.swift; sourceTree = "<group>"; };
 		F0263DA561A02771FE00AD71 /* FizzyBuzzyServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FizzyBuzzyServiceTests.swift; sourceTree = "<group>"; };
 		F0263F06B0CEBAE144A1BC5A /* WeatherReport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherReport.swift; sourceTree = "<group>"; };
@@ -207,8 +197,6 @@
 			isa = PBXGroup;
 			children = (
 				AD2FA145663E6C04DFBAD11A /* FizzyBuzzyService.swift */,
-				AD2FA19FA5F4BCFA3496720E /* FizzyBuzzy.swift */,
-				AD2FA4187D663B2F55B919BB /* ThreeStrategy.swift */,
 			);
 			path = FizzBuzz;
 			sourceTree = "<group>";
@@ -267,9 +255,6 @@
 		F0263E8F91A6D92AE1B41275 /* FizzBuzz */ = {
 			isa = PBXGroup;
 			children = (
-				F0263A755B8144AFE031009F /* FiveStrategyTests.swift */,
-				F026367EADECB144B0A2F334 /* FizzyBuzzyTests.swift */,
-				F0263792D5D74D7896D7EDC4 /* ThreeStrategyTests.swift */,
 				F0263DA561A02771FE00AD71 /* FizzyBuzzyServiceTests.swift */,
 			);
 			path = FizzBuzz;
@@ -415,8 +400,6 @@
 				AD2FA10C99A6AB8270F28017 /* WeatherViewModel.swift in Sources */,
 				AD2FADC8F11764F6B8599B27 /* FizzBuzzViewModel.swift in Sources */,
 				AD2FA09B58B0168E84D68DC9 /* FizzyBuzzyService.swift in Sources */,
-				AD2FAAAE16B421D6BBDBE2EB /* FizzyBuzzy.swift in Sources */,
-				AD2FA5054FF5B90D767AB380 /* ThreeStrategy.swift in Sources */,
 				F026320D9BAA7B2B88EDE746 /* WeatherReport.swift in Sources */,
 				F0263E7DE412CD28CE36F5FB /* WeatherService.swift in Sources */,
 				F026320D96BB543F18896E78 /* WeatherController.swift in Sources */,
@@ -433,9 +416,6 @@
 				AD2FAA6E3100EF197553EF38 /* NotificationCenterObserverTests.swift in Sources */,
 				2D9B83896288DA25F5183A37 /* PublishedObserverTests.swift in Sources */,
 				AD2FAE528602FC581D467852 /* FizzBuzzViewControllerTest.swift in Sources */,
-				F02631F9CEED3141764111A7 /* FiveStrategyTests.swift in Sources */,
-				F0263C75FA3D489E155F969D /* FizzyBuzzyTests.swift in Sources */,
-				F0263CFE7E232B26D7857E15 /* ThreeStrategyTests.swift in Sources */,
 				F0263CEBC8D1C849F3371F47 /* FizzyBuzzyServiceTests.swift in Sources */,
 				F026364BAE68A5728CF94771 /* WeatherServiceTests.swift in Sources */,
 				F02632D1B6457F39E627D9BB /* FizzBuzzControllerTest.swift in Sources */,

@@ -1,5 +1,4 @@
 import Foundation
-import FizzBuzz
 
 public class FizzyBuzzy {
     var threeStrategy: StrategyProtocol
