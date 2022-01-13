@@ -11,12 +11,12 @@
 		1161D258278771510031B9F5 /* JsonUtf8FacadeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1161D257278771510031B9F5 /* JsonUtf8FacadeTests.swift */; };
 		1161D25A278771D10031B9F5 /* JsonUtf8Facade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1161D259278771D10031B9F5 /* JsonUtf8Facade.swift */; };
 		11A6FE142784D987003A8195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11A6FE132784D987003A8195 /* Assets.xcassets */; };
+		11D73E332790A71600C84077 /* FizzBuzz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D73E322790A71600C84077 /* FizzBuzz.framework */; };
+		11D73E342790A71600C84077 /* FizzBuzz.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11D73E322790A71600C84077 /* FizzBuzz.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2D9B83896288DA25F5183A37 /* PublishedObserverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9B8B27FF6BB2C5EB30AD31 /* PublishedObserverTests.swift */; };
 		AD2FA09B58B0168E84D68DC9 /* FizzyBuzzyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2FA145663E6C04DFBAD11A /* FizzyBuzzyService.swift */; };
 		AD2FA10026BCB216AF91072B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD2FACBB6C6B9BF56C834497 /* Main.storyboard */; };
 		AD2FA10C99A6AB8270F28017 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2FAA3B0F18CC2D1BB99D0B /* WeatherViewModel.swift */; };
-		AD2FA19B5F062B23279BDCA9 /* StrategyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2FAC945410A87948F823D2 /* StrategyProtocol.swift */; };
-		AD2FA1D4606E52FE1DF0B63E /* FiveStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2FA6B89B6522ED9B6665B2 /* FiveStrategy.swift */; };
 		AD2FA4B8542ED860D0EDDD63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD2FA43C7F20B752F6151757 /* LaunchScreen.storyboard */; };
 		AD2FA5054FF5B90D767AB380 /* ThreeStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2FA4187D663B2F55B919BB /* ThreeStrategy.swift */; };
 		AD2FA5C0856292D099944F8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2FA42A6A90258A596998B5 /* SceneDelegate.swift */; };
@@ -56,6 +56,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		11D73E352790A71600C84077 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				11D73E342790A71600C84077 /* FizzBuzz.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1161D255278770AA0031B9F5 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		1161D257278771510031B9F5 /* JsonUtf8FacadeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonUtf8FacadeTests.swift; sourceTree = "<group>"; };
@@ -65,6 +79,7 @@
 		11A6FE182784D987003A8195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11A6FE1D2784D987003A8195 /* storyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = storyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A6FE272784D987003A8195 /* storyboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = storyboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11D73E322790A71600C84077 /* FizzBuzz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FizzBuzz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D9B8B27FF6BB2C5EB30AD31 /* PublishedObserverTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishedObserverTests.swift; sourceTree = "<group>"; };
 		AD2FA145663E6C04DFBAD11A /* FizzyBuzzyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FizzyBuzzyService.swift; sourceTree = "<group>"; };
 		AD2FA15085F8A36DF7584349 /* FizzBuzzViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FizzBuzzViewControllerTest.swift; sourceTree = "<group>"; };
@@ -72,12 +87,10 @@
 		AD2FA4187D663B2F55B919BB /* ThreeStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeStrategy.swift; sourceTree = "<group>"; };
 		AD2FA42A6A90258A596998B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AD2FA43C7F20B752F6151757 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AD2FA6B89B6522ED9B6665B2 /* FiveStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiveStrategy.swift; sourceTree = "<group>"; };
 		AD2FAA3B0F18CC2D1BB99D0B /* WeatherViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		AD2FAA6FB45193A5C3247DC3 /* FizzBuzzViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FizzBuzzViewModel.swift; sourceTree = "<group>"; };
 		AD2FABE9E05027A8B46C749D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD2FAC85CABCFAA67196E07A /* NotificationCenterObserverTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCenterObserverTests.swift; sourceTree = "<group>"; };
-		AD2FAC945410A87948F823D2 /* StrategyProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrategyProtocol.swift; sourceTree = "<group>"; };
 		AD2FACBB6C6B9BF56C834497 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		AD2FAD47F8DDCF9617588466 /* FizzBuzzViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FizzBuzzViewController.swift; sourceTree = "<group>"; };
 		F02630C6DED1FB6139FC73CE /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
@@ -98,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11D73E332790A71600C84077 /* FizzBuzz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +138,7 @@
 				11A6FE092784D986003A8195 /* storyboard */,
 				11A6FE202784D987003A8195 /* storyboardTests */,
 				11A6FE082784D986003A8195 /* Products */,
+				11D73E312790A71600C84077 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +183,14 @@
 			path = storyboardTests;
 			sourceTree = "<group>";
 		};
+		11D73E312790A71600C84077 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11D73E322790A71600C84077 /* FizzBuzz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AD2FA0830FF70A4C2BD72A1B /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,8 +208,6 @@
 			children = (
 				AD2FA145663E6C04DFBAD11A /* FizzyBuzzyService.swift */,
 				AD2FA19FA5F4BCFA3496720E /* FizzyBuzzy.swift */,
-				AD2FA6B89B6522ED9B6665B2 /* FiveStrategy.swift */,
-				AD2FAC945410A87948F823D2 /* StrategyProtocol.swift */,
 				AD2FA4187D663B2F55B919BB /* ThreeStrategy.swift */,
 			);
 			path = FizzBuzz;
@@ -264,6 +285,7 @@
 				11A6FE032784D986003A8195 /* Sources */,
 				11A6FE042784D986003A8195 /* Frameworks */,
 				11A6FE052784D986003A8195 /* Resources */,
+				11D73E352790A71600C84077 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -394,8 +416,6 @@
 				AD2FADC8F11764F6B8599B27 /* FizzBuzzViewModel.swift in Sources */,
 				AD2FA09B58B0168E84D68DC9 /* FizzyBuzzyService.swift in Sources */,
 				AD2FAAAE16B421D6BBDBE2EB /* FizzyBuzzy.swift in Sources */,
-				AD2FA1D4606E52FE1DF0B63E /* FiveStrategy.swift in Sources */,
-				AD2FA19B5F062B23279BDCA9 /* StrategyProtocol.swift in Sources */,
 				AD2FA5054FF5B90D767AB380 /* ThreeStrategy.swift in Sources */,
 				F026320D9BAA7B2B88EDE746 /* WeatherReport.swift in Sources */,
 				F0263E7DE412CD28CE36F5FB /* WeatherService.swift in Sources */,

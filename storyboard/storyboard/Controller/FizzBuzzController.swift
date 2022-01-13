@@ -1,4 +1,5 @@
 import UIKit
+import FizzBuzz
 
 class FizzBuzzController {
     public func buildViewModel(input: String?) -> FizzBuzzViewModel {

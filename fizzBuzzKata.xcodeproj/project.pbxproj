@@ -38,6 +38,20 @@
 			remoteGlobalIDString = CC18E71F27849740006DA5DC;
 			remoteInfo = fizzBuzzKata;
 		};
+		CC5C9B2A27907D43004324B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC5C9B2527907D42004324B4 /* FizzBuzz.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CC5C9B0B27907D42004324B4;
+			remoteInfo = FizzBuzz;
+		};
+		CC5C9B2C27907D43004324B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC5C9B2527907D42004324B4 /* FizzBuzz.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CC5C9B1527907D42004324B4;
+			remoteInfo = FizzBuzzTests;
+		};
 		F026338846CF3DD353EC4A1E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F02630DF3385EFFDA91C62B4 /* storyboard.xcodeproj */;
@@ -71,6 +85,7 @@
 		CC18E73427849741006DA5DC /* ContentViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewTests.swift; sourceTree = "<group>"; };
 		CC18E73A27849741006DA5DC /* fizzBuzzKataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fizzBuzzKataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC18E74027849741006DA5DC /* fizzBuzzKataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fizzBuzzKataUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CC5C9B2527907D42004324B4 /* FizzBuzz.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FizzBuzz.xcodeproj; path = FizzBuzz/FizzBuzz.xcodeproj; sourceTree = "<group>"; };
 		F02630DF3385EFFDA91C62B4 /* storyboard.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = storyboard.xcodeproj; path = storyboard/storyboard.xcodeproj; sourceTree = "<group>"; };
 		F026312603FA57E9E8AA0F3A /* FizzyBuzzy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FizzyBuzzy.swift; sourceTree = "<group>"; };
 		F0263126C4AB17524F5FCD77 /* FiveStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiveStrategy.swift; sourceTree = "<group>"; };
@@ -110,6 +125,7 @@
 		CC18E71727849740006DA5DC = {
 			isa = PBXGroup;
 			children = (
+				CC5C9B2527907D42004324B4 /* FizzBuzz.xcodeproj */,
 				CC18E72227849740006DA5DC /* fizzBuzzKata */,
 				CC18E73327849741006DA5DC /* fizzBuzzKataTests */,
 				CC18E73D27849741006DA5DC /* fizzBuzzKataUITests */,
@@ -168,6 +184,15 @@
 				CC18E74027849741006DA5DC /* fizzBuzzKataUITestsLaunchTests.swift */,
 			);
 			path = fizzBuzzKataUITests;
+			sourceTree = "<group>";
+		};
+		CC5C9B2627907D42004324B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC5C9B2B27907D43004324B4 /* FizzBuzz.framework */,
+				CC5C9B2D27907D43004324B4 /* FizzBuzzTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		F0263437EEB5A2CCB639A904 /* Products */ = {
@@ -278,6 +303,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = CC5C9B2627907D42004324B4 /* Products */;
+					ProjectRef = CC5C9B2527907D42004324B4 /* FizzBuzz.xcodeproj */;
+				},
+				{
 					ProductGroup = F0263437EEB5A2CCB639A904 /* Products */;
 					ProjectRef = F02630DF3385EFFDA91C62B4 /* storyboard.xcodeproj */;
 				},
@@ -292,6 +321,20 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		CC5C9B2B27907D43004324B4 /* FizzBuzz.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FizzBuzz.framework;
+			remoteRef = CC5C9B2A27907D43004324B4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CC5C9B2D27907D43004324B4 /* FizzBuzzTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FizzBuzzTests.xctest;
+			remoteRef = CC5C9B2C27907D43004324B4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		F026342AC470CDBD6D758578 /* storyboardTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;

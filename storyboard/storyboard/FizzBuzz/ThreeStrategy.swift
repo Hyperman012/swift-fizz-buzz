@@ -1,4 +1,5 @@
 import Foundation
+import FizzBuzz
 
 public class ThreeStrategy: StrategyProtocol {
     public func evaluate(_ input: Int) -> Bool {
