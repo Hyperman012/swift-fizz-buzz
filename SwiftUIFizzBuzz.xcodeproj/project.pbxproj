@@ -34,14 +34,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CC18E72027849740006DA5DC /* fizzBuzzKata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fizzBuzzKata.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC18E72027849740006DA5DC /* SwiftUIFizzBuzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIFizzBuzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC18E72327849740006DA5DC /* fizzBuzzKataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fizzBuzzKataApp.swift; sourceTree = "<group>"; };
 		CC18E72527849740006DA5DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CC18E72727849741006DA5DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC18E72A27849741006DA5DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CC18E73027849741006DA5DC /* fizzBuzzKataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fizzBuzzKataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC18E73027849741006DA5DC /* SwiftUIFizzBuzzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIFizzBuzzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC18E73427849741006DA5DC /* ContentViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewTests.swift; sourceTree = "<group>"; };
-		CC18E73A27849741006DA5DC /* fizzBuzzKataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fizzBuzzKataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC18E73A27849741006DA5DC /* SwiftUIFizzBuzzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIFizzBuzzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC18E74027849741006DA5DC /* fizzBuzzKataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fizzBuzzKataUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,9 +74,9 @@
 		CC18E71727849740006DA5DC = {
 			isa = PBXGroup;
 			children = (
-				CC18E72227849740006DA5DC /* fizzBuzzKata */,
-				CC18E73327849741006DA5DC /* fizzBuzzKataTests */,
-				CC18E73D27849741006DA5DC /* fizzBuzzKataUITests */,
+				CC18E72227849740006DA5DC /* SwiftUIFizzBuzz */,
+				CC18E73327849741006DA5DC /* SwiftUIFizzBuzzTests */,
+				CC18E73D27849741006DA5DC /* SwiftUIFizzBuzzUITests */,
 				CC18E72127849740006DA5DC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,14 +84,14 @@
 		CC18E72127849740006DA5DC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CC18E72027849740006DA5DC /* fizzBuzzKata.app */,
-				CC18E73027849741006DA5DC /* fizzBuzzKataTests.xctest */,
-				CC18E73A27849741006DA5DC /* fizzBuzzKataUITests.xctest */,
+				CC18E72027849740006DA5DC /* SwiftUIFizzBuzz.app */,
+				CC18E73027849741006DA5DC /* SwiftUIFizzBuzzTests.xctest */,
+				CC18E73A27849741006DA5DC /* SwiftUIFizzBuzzUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CC18E72227849740006DA5DC /* fizzBuzzKata */ = {
+		CC18E72227849740006DA5DC /* SwiftUIFizzBuzz */ = {
 			isa = PBXGroup;
 			children = (
 				CC18E72327849740006DA5DC /* fizzBuzzKataApp.swift */,
@@ -99,7 +99,7 @@
 				CC18E72727849741006DA5DC /* Assets.xcassets */,
 				CC18E72927849741006DA5DC /* Preview Content */,
 			);
-			path = fizzBuzzKata;
+			path = SwiftUIFizzBuzz;
 			sourceTree = "<group>";
 		};
 		CC18E72927849741006DA5DC /* Preview Content */ = {
@@ -110,28 +110,28 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		CC18E73327849741006DA5DC /* fizzBuzzKataTests */ = {
+		CC18E73327849741006DA5DC /* SwiftUIFizzBuzzTests */ = {
 			isa = PBXGroup;
 			children = (
 				CC18E73427849741006DA5DC /* ContentViewTests.swift */,
 			);
-			path = fizzBuzzKataTests;
+			path = SwiftUIFizzBuzzTests;
 			sourceTree = "<group>";
 		};
-		CC18E73D27849741006DA5DC /* fizzBuzzKataUITests */ = {
+		CC18E73D27849741006DA5DC /* SwiftUIFizzBuzzUITests */ = {
 			isa = PBXGroup;
 			children = (
 				CC18E74027849741006DA5DC /* fizzBuzzKataUITestsLaunchTests.swift */,
 			);
-			path = fizzBuzzKataUITests;
+			path = SwiftUIFizzBuzzUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CC18E71F27849740006DA5DC /* fizzBuzzKata */ = {
+		CC18E71F27849740006DA5DC /* SwiftUIFizzBuzz */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC18E74427849741006DA5DC /* Build configuration list for PBXNativeTarget "fizzBuzzKata" */;
+			buildConfigurationList = CC18E74427849741006DA5DC /* Build configuration list for PBXNativeTarget "SwiftUIFizzBuzz" */;
 			buildPhases = (
 				CC18E71C27849740006DA5DC /* Sources */,
 				CC18E71D27849740006DA5DC /* Frameworks */,
@@ -141,14 +141,14 @@
 			);
 			dependencies = (
 			);
-			name = fizzBuzzKata;
+			name = SwiftUIFizzBuzz;
 			productName = fizzBuzzKata;
-			productReference = CC18E72027849740006DA5DC /* fizzBuzzKata.app */;
+			productReference = CC18E72027849740006DA5DC /* SwiftUIFizzBuzz.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CC18E72F27849741006DA5DC /* fizzBuzzKataTests */ = {
+		CC18E72F27849741006DA5DC /* SwiftUIFizzBuzzTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC18E74727849741006DA5DC /* Build configuration list for PBXNativeTarget "fizzBuzzKataTests" */;
+			buildConfigurationList = CC18E74727849741006DA5DC /* Build configuration list for PBXNativeTarget "SwiftUIFizzBuzzTests" */;
 			buildPhases = (
 				CC18E72C27849741006DA5DC /* Sources */,
 				CC18E72D27849741006DA5DC /* Frameworks */,
@@ -159,17 +159,17 @@
 			dependencies = (
 				CC18E73227849741006DA5DC /* PBXTargetDependency */,
 			);
-			name = fizzBuzzKataTests;
+			name = SwiftUIFizzBuzzTests;
 			packageProductDependencies = (
 				CC18E75E2784F0D4006DA5DC /* ViewInspector */,
 			);
 			productName = fizzBuzzKataTests;
-			productReference = CC18E73027849741006DA5DC /* fizzBuzzKataTests.xctest */;
+			productReference = CC18E73027849741006DA5DC /* SwiftUIFizzBuzzTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CC18E73927849741006DA5DC /* fizzBuzzKataUITests */ = {
+		CC18E73927849741006DA5DC /* SwiftUIFizzBuzzUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC18E74A27849741006DA5DC /* Build configuration list for PBXNativeTarget "fizzBuzzKataUITests" */;
+			buildConfigurationList = CC18E74A27849741006DA5DC /* Build configuration list for PBXNativeTarget "SwiftUIFizzBuzzUITests" */;
 			buildPhases = (
 				CC18E73627849741006DA5DC /* Sources */,
 				CC18E73727849741006DA5DC /* Frameworks */,
@@ -180,9 +180,9 @@
 			dependencies = (
 				CC18E73C27849741006DA5DC /* PBXTargetDependency */,
 			);
-			name = fizzBuzzKataUITests;
+			name = SwiftUIFizzBuzzUITests;
 			productName = fizzBuzzKataUITests;
-			productReference = CC18E73A27849741006DA5DC /* fizzBuzzKataUITests.xctest */;
+			productReference = CC18E73A27849741006DA5DC /* SwiftUIFizzBuzzUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -208,7 +208,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CC18E71B27849740006DA5DC /* Build configuration list for PBXProject "fizzBuzzKata" */;
+			buildConfigurationList = CC18E71B27849740006DA5DC /* Build configuration list for PBXProject "SwiftUIFizzBuzz" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -224,9 +224,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CC18E71F27849740006DA5DC /* fizzBuzzKata */,
-				CC18E72F27849741006DA5DC /* fizzBuzzKataTests */,
-				CC18E73927849741006DA5DC /* fizzBuzzKataUITests */,
+				CC18E71F27849740006DA5DC /* SwiftUIFizzBuzz */,
+				CC18E72F27849741006DA5DC /* SwiftUIFizzBuzzTests */,
+				CC18E73927849741006DA5DC /* SwiftUIFizzBuzzUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -288,12 +288,12 @@
 /* Begin PBXTargetDependency section */
 		CC18E73227849741006DA5DC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CC18E71F27849740006DA5DC /* fizzBuzzKata */;
+			target = CC18E71F27849740006DA5DC /* SwiftUIFizzBuzz */;
 			targetProxy = CC18E73127849741006DA5DC /* PBXContainerItemProxy */;
 		};
 		CC18E73C27849741006DA5DC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CC18E71F27849740006DA5DC /* fizzBuzzKata */;
+			target = CC18E71F27849740006DA5DC /* SwiftUIFizzBuzz */;
 			targetProxy = CC18E73B27849741006DA5DC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -422,7 +422,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"fizzBuzzKata/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIFizzBuzz/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -450,7 +450,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"fizzBuzzKata/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIFizzBuzz/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -486,7 +486,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fizzBuzzKata.app/fizzBuzzKata";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUIFizzBuzz.app/SwiftUIFizzBuzz";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/storyboard\"/**";
 			};
 			name = Debug;
@@ -506,7 +506,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fizzBuzzKata.app/fizzBuzzKata";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUIFizzBuzz.app/SwiftUIFizzBuzz";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/storyboard\"/**";
 			};
 			name = Release;
@@ -548,7 +548,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CC18E71B27849740006DA5DC /* Build configuration list for PBXProject "fizzBuzzKata" */ = {
+		CC18E71B27849740006DA5DC /* Build configuration list for PBXProject "SwiftUIFizzBuzz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CC18E74227849741006DA5DC /* Debug */,
@@ -557,7 +557,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC18E74427849741006DA5DC /* Build configuration list for PBXNativeTarget "fizzBuzzKata" */ = {
+		CC18E74427849741006DA5DC /* Build configuration list for PBXNativeTarget "SwiftUIFizzBuzz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CC18E74527849741006DA5DC /* Debug */,
@@ -566,7 +566,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC18E74727849741006DA5DC /* Build configuration list for PBXNativeTarget "fizzBuzzKataTests" */ = {
+		CC18E74727849741006DA5DC /* Build configuration list for PBXNativeTarget "SwiftUIFizzBuzzTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CC18E74827849741006DA5DC /* Debug */,
@@ -575,7 +575,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC18E74A27849741006DA5DC /* Build configuration list for PBXNativeTarget "fizzBuzzKataUITests" */ = {
+		CC18E74A27849741006DA5DC /* Build configuration list for PBXNativeTarget "SwiftUIFizzBuzzUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CC18E74B27849741006DA5DC /* Debug */,

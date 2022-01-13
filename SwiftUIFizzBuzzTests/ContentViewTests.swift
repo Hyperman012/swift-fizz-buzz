@@ -1,6 +1,6 @@
 import XCTest
 import ViewInspector
-@testable import fizzBuzzKata
+@testable import SwiftUIFizzBuzz
 
 extension ContentView: Inspectable { }
 
