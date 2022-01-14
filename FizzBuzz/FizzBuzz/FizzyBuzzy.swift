@@ -32,4 +32,10 @@ public class FizzyBuzzy {
     public func calculate(_ inputs: [Int]) -> [String] {
         inputs.map { input in calculate(input) }
     }
+    
+    public func calculate(_ inputs: Set<Int>) -> Set<String> {
+        inputs
+            .map { input in calculate(input) }
+            .reduce(into: Set<String>()) { (collection, value) in collection.insert(value) }
+    }
 }

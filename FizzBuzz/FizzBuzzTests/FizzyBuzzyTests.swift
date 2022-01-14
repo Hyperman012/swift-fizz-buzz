@@ -107,6 +107,27 @@ class FizzyBuzzyTests: XCTestCase {
         XCTAssertEqual(actualResult, expected)
     }
     
+    func testShouldFizzBuzzWithNoItemsInSet() {
+        let expected: Set<String> = []
+        let input: Set<Int> = []
+        let actualResult = testObj.calculate(input)
+        XCTAssertEqual(actualResult, expected)
+    }
+    
+    func testShouldFizzBuzzWith1ItemInSet() {
+        let expected: Set<String> = ["1"]
+        let input: Set<Int> = [1]
+        let actualResult = testObj.calculate(input)
+        XCTAssertEqual(actualResult, expected)
+    }
+    
+    func testShouldFizzBuzzWith2ItemInSetWithFizz() {
+        let expected: Set<String> = ["fizz"]
+        let input: Set<Int> = [3, 6]
+        let actualResult = testObj.calculate(input)
+        XCTAssertEqual(actualResult, expected)
+        XCTAssertEqual(actualResult.count, 1)
+    }
 }
 
 class TrueStrategyProtocol: StrategyProtocol {
