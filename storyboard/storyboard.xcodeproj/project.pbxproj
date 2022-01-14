@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1161D256278770AA0031B9F5 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1161D255278770AA0031B9F5 /* test.swift */; };
 		1161D258278771510031B9F5 /* JsonUtf8FacadeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1161D257278771510031B9F5 /* JsonUtf8FacadeTests.swift */; };
+		119F9EEC2791FF6B00F512FF /* FizzBuzzCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119F9EEB2791FF6B00F512FF /* FizzBuzzCollectionViewController.swift */; };
+		119F9EEE2792005600F512FF /* FizzBuzzCollectionViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119F9EED2792005600F512FF /* FizzBuzzCollectionViewControllerTests.swift */; };
 		11A6FE142784D987003A8195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11A6FE132784D987003A8195 /* Assets.xcassets */; };
 		11D73E332790A71600C84077 /* FizzBuzz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D73E322790A71600C84077 /* FizzBuzz.framework */; };
 		11D73E342790A71600C84077 /* FizzBuzz.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11D73E322790A71600C84077 /* FizzBuzz.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -65,6 +67,8 @@
 /* Begin PBXFileReference section */
 		1161D255278770AA0031B9F5 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		1161D257278771510031B9F5 /* JsonUtf8FacadeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonUtf8FacadeTests.swift; sourceTree = "<group>"; };
+		119F9EEB2791FF6B00F512FF /* FizzBuzzCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzCollectionViewController.swift; sourceTree = "<group>"; };
+		119F9EED2792005600F512FF /* FizzBuzzCollectionViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzCollectionViewControllerTests.swift; sourceTree = "<group>"; };
 		11A6FE072784D986003A8195 /* storyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = storyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A6FE132784D987003A8195 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11A6FE182784D987003A8195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -180,6 +184,7 @@
 				AD2FAD47F8DDCF9617588466 /* FizzBuzzViewController.swift */,
 				AD2FABE9E05027A8B46C749D /* AppDelegate.swift */,
 				AD2FA43C7F20B752F6151757 /* LaunchScreen.storyboard */,
+				119F9EEB2791FF6B00F512FF /* FizzBuzzCollectionViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -197,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				AD2FA15085F8A36DF7584349 /* FizzBuzzViewControllerTest.swift */,
+				119F9EED2792005600F512FF /* FizzBuzzCollectionViewControllerTests.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -376,6 +382,7 @@
 				F026320D9BAA7B2B88EDE746 /* WeatherReport.swift in Sources */,
 				F0263E7DE412CD28CE36F5FB /* WeatherService.swift in Sources */,
 				F026320D96BB543F18896E78 /* WeatherController.swift in Sources */,
+				119F9EEC2791FF6B00F512FF /* FizzBuzzCollectionViewController.swift in Sources */,
 				F026378A496D6B1764E3E6D1 /* FizzBuzzController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,6 +393,7 @@
 			files = (
 				1161D258278771510031B9F5 /* JsonUtf8FacadeTests.swift in Sources */,
 				1161D256278770AA0031B9F5 /* test.swift in Sources */,
+				119F9EEE2792005600F512FF /* FizzBuzzCollectionViewControllerTests.swift in Sources */,
 				AD2FAA6E3100EF197553EF38 /* NotificationCenterObserverTests.swift in Sources */,
 				2D9B83896288DA25F5183A37 /* PublishedObserverTests.swift in Sources */,
 				AD2FAE528602FC581D467852 /* FizzBuzzViewControllerTest.swift in Sources */,
