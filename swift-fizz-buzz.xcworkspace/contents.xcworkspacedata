@@ -5,7 +5,7 @@
       location = "group:storyboard/storyboard.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:/Users/kevinsivic/Develop/industrial_logic/fizzBuzzKata/SwiftUIFizzBuzz.xcodeproj">
+      location = "group:SwiftUIFizzBuzz.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:FizzBuzz/FizzBuzz.xcodeproj">
