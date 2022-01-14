@@ -86,6 +86,20 @@ class FizzyBuzzyTests: XCTestCase {
 
         XCTAssertEqual(spy.timesCalled, 2);
     }
+    
+    func testShouldFizzBuzzAList(){
+        let expected = ["1","2"]
+        let input = [1,2]
+        let actualResult = testObj.calculate(input)
+        XCTAssertEqual(actualResult, expected)
+    }
+    func testShouldFizzBuzzAListWithFizz(){
+        let expected = ["2","fizz"]
+        let input = [2,3]
+        let actualResult = testObj.calculate(input)
+        XCTAssertEqual(actualResult, expected)
+    }
+    
 }
 
 class TrueStrategyProtocol: StrategyProtocol {

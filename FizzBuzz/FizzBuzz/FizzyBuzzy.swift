@@ -28,5 +28,16 @@ public class FizzyBuzzy {
 
         return String(input)
     }
+    
+    public func calculate(_ input : [Int]) -> [String] {
+        var returnVal:[String] = []
+            
+        for item in input {
+            returnVal.append(calculate(item))
+        }
+        
+        return returnVal
+    }
+    
 
 }
