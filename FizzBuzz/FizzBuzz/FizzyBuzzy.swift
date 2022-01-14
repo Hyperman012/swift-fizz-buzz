@@ -30,11 +30,7 @@ public class FizzyBuzzy {
     }
     
     public func calculate(_ inputs: [Int]) -> [String] {
-        var returnVal:[String] = []
-            
-        inputs.forEach { input in returnVal.append(calculate(input)) }
-        
-        return returnVal
+        inputs.map { input in calculate(input) }
     }
     
 
