@@ -29,12 +29,10 @@ public class FizzyBuzzy {
         return String(input)
     }
     
-    public func calculate(_ input : [Int]) -> [String] {
+    public func calculate(_ inputs: [Int]) -> [String] {
         var returnVal:[String] = []
             
-        for item in input {
-            returnVal.append(calculate(item))
-        }
+        inputs.forEach { input in returnVal.append(calculate(input)) }
         
         return returnVal
     }
