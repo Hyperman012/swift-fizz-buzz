@@ -32,6 +32,4 @@ public class FizzyBuzzy {
     public func calculate(_ inputs: [Int]) -> [String] {
         inputs.map { input in calculate(input) }
     }
-    
-
 }

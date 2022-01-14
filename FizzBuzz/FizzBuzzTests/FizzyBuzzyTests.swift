@@ -99,6 +99,13 @@ class FizzyBuzzyTests: XCTestCase {
         let actualResult = testObj.calculate(input)
         XCTAssertEqual(actualResult, expected)
     }
+
+    func testShouldFizzBuzzWithNoItems() {
+        let expected: [String] = []
+        let input: [Int] = []
+        let actualResult = testObj.calculate(input)
+        XCTAssertEqual(actualResult, expected)
+    }
     
 }
 
