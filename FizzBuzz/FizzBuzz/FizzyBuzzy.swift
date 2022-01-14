@@ -38,8 +38,6 @@ public class FizzyBuzzy {
     }
 
     public func calculate(_ inputs: inout [Int:String?]) {
-        for (key,value) in inputs {
-            inputs[key] = calculate(key)
-        }
+        inputs.forEach { (key, _) in inputs[key] = calculate(key) }
     }
 }
