@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Fizz Buzz View Controller-->
+        <!--B-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="FizzBuzzViewController" id="BYZ-38-t0r" customClass="FizzBuzzViewController" customModule="storyboard" customModuleProvider="target" sceneMemberID="viewController">
@@ -62,19 +62,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="upy-js-VKD">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="Eca-cS-ghc">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Hn8-tN-u8v">
-                                <rect key="frame" x="253" y="5" width="141" height="34.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Goto next page"/>
-                                <connections>
-                                    <segue destination="iEH-GO-gIO" kind="show" id="Bdx-LZ-yuu"/>
-                                </connections>
-                            </button>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="B" id="lty-hA-MCX">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="CVI-gR-SbP">
+                            <connections>
+                                <segue destination="iEH-GO-gIO" kind="show" id="d0K-zi-pLn"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="button" destination="xQO-BG-x3Y" id="ejX-6S-xzr"/>
                         <outlet property="currentCity" destination="LUU-9H-0jZ" id="qQz-zf-Mi6"/>
@@ -87,7 +83,7 @@
             </objects>
             <point key="canvasLocation" x="426.08695652173918" y="138.61607142857142"/>
         </scene>
-        <!--Fizz Buzz Collection View Controller-->
+        <!--C-->
         <scene sceneID="cCX-c4-skL">
             <objects>
                 <collectionViewController storyboardIdentifier="FizzBuzzCollectionViewController" id="iEH-GO-gIO" customClass="FizzBuzzCollectionViewController" customModule="storyboard" customModuleProvider="target" sceneMemberID="viewController">
@@ -117,7 +113,7 @@
                             <outlet property="delegate" destination="iEH-GO-gIO" id="Wtk-29-ioW"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="N2v-pf-0HP"/>
+                    <navigationItem key="navigationItem" title="C" id="N2v-pf-0HP"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rb6-zz-ecL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
