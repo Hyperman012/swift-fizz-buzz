@@ -128,6 +128,21 @@ class FizzyBuzzyTests: XCTestCase {
         XCTAssertEqual(actualResult, expected)
         XCTAssertEqual(actualResult.count, 1)
     }
+    
+    func testShouldFizzBuzzWithEmptyDictionary(){
+        let expected: [Int:String] = [:]
+        var input: [Int:String?] = [:]
+        testObj.calculate(&input)
+        XCTAssertEqual(input, expected)
+    }
+
+    func testShouldFizzBuzzWith1InDictionary(){
+        let expected: [Int:String] = [1:"1"]
+        var input: [Int:String?] = [1:nil]
+        testObj.calculate(&input)
+        XCTAssertEqual(input, expected)
+    }
+
 }
 
 class TrueStrategyProtocol: StrategyProtocol {

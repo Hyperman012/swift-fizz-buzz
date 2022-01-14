@@ -36,4 +36,10 @@ public class FizzyBuzzy {
     public func calculate(_ inputs: Set<Int>) -> Set<String> {
         Set(inputs.map(calculate(_:)))
     }
+
+    public func calculate(_ inputs: inout [Int:String?]) {
+        for (key,value) in inputs {
+            inputs[key] = calculate(key)
+        }
+    }
 }
