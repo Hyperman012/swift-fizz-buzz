@@ -38,4 +38,16 @@ public class FizzBuzzCollectionViewControllerTests: XCTestCase {
 
         XCTAssertEqual(cell.label.text, "2")
     }
+    
+    public func testShouldHaveFizzForThirdItemResult() {
+        let viewController = createViewController()
+        let indexPathInput = IndexPath(item: 0, section: 2)
+        let inputCell = viewController.collectionView(viewController.collectionView, cellForItemAt: indexPathInput) as! FizzBuzzViewCell
+        
+        let indexPath = IndexPath(item: 1, section: 2)
+        let resultCell = viewController.collectionView(viewController.collectionView, cellForItemAt: indexPath) as! FizzBuzzViewCell
+
+        XCTAssertEqual(inputCell.label.text, "3")
+        XCTAssertEqual(resultCell.label.text, "fizz")
+    }
 }
