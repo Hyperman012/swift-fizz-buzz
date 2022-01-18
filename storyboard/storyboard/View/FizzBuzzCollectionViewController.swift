@@ -16,14 +16,14 @@ public extension FizzBuzzCollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath ) -> UICollectionViewCell {
         let input = indexPath.section + 1
-        let result: Int = indexPath.item
+        let isResultColumn = indexPath.item == 1
 
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "fizzbuzz", for: indexPath) as! FizzBuzzViewCell
         
         cell.with(text: String(input))
-        
-        if (input == 3 && result == 1) {
-            cell.with(text: "fizz")
+
+        if isResultColumn {
+            cell.with(text: FizzyBuzzy().calculate(input))
         }
         
         return cell

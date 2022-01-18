@@ -43,6 +43,14 @@ public class FizzBuzzCollectionViewControllerTests: XCTestCase {
         assertCellsHaveInputAndOutput(section: 2, input: "3", result: "fizz")
     }
 
+    public func testShouldHaveFizzForSixthItemResult() {
+        assertCellsHaveInputAndOutput(section: 5, input: "6", result: "fizz")
+    }
+    
+    public func testShouldHaveBuzzForFifthItemResult() {
+        assertCellsHaveInputAndOutput(section: 4, input: "5", result: "buzz")
+    }
+
     private func assertCellsHaveInputAndOutput(section: Int, input: String, result: String) {
         let inputCell = createFizzBuzzCell(IndexPath(item: 0, section: section))
         let resultCell = createFizzBuzzCell(IndexPath(item: 1, section: section))
