@@ -32,25 +32,23 @@ public class FizzBuzzCollectionViewControllerTests: XCTestCase {
     }
 
     public func testShouldHave1ForFirstItem() {
-        let indexPath = IndexPath(row: 0, section: 0)
-        let cell = viewController.collectionView(viewController.collectionView, cellForItemAt: indexPath) as! FizzBuzzViewCell
-
-        XCTAssertEqual(cell.label.text, "1")
+        assertCellsHaveInputAndOutput(section: 0, input: "1", result: "1")
     }
 
     public func testShouldHave2ForSecondItem() {
-        let indexPath = IndexPath(row: 0, section: 1)
-        let cell = viewController.collectionView(viewController.collectionView, cellForItemAt: indexPath) as! FizzBuzzViewCell
-
-        XCTAssertEqual(cell.label.text, "2")
+        assertCellsHaveInputAndOutput(section: 1, input: "2", result: "2")
     }
 
     public func testShouldHaveFizzForThirdItemResult() {
-        let inputCell = createFizzBuzzCell(IndexPath(item: 0, section: 2))
-        let resultCell = createFizzBuzzCell(IndexPath(item: 1, section: 2))
+        assertCellsHaveInputAndOutput(section: 2, input: "3", result: "fizz")
+    }
 
-        XCTAssertEqual(inputCell.label.text, "3")
-        XCTAssertEqual(resultCell.label.text, "fizz")
+    private func assertCellsHaveInputAndOutput(section: Int, input: String, result: String) {
+        let inputCell = createFizzBuzzCell(IndexPath(item: 0, section: section))
+        let resultCell = createFizzBuzzCell(IndexPath(item: 1, section: section))
+
+        XCTAssertEqual(inputCell.label.text, input)
+        XCTAssertEqual(resultCell.label.text, result)
     }
 
     private func createFizzBuzzCell(_ indexPathInput: IndexPath) -> FizzBuzzViewCell {
