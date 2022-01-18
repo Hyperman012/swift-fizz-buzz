@@ -3,11 +3,19 @@ import UIKit
 import FizzBuzz
 
 public class FizzBuzzCollectionViewController: UICollectionViewController {
+    var dataSource: [Int:String?]
+
+    public required init?(coder: NSCoder) {
+        dataSource = [1:nil, 2:nil, 3:nil, 4:nil, 5:nil, 6:nil, 7:nil, 8:nil, 9:nil, 10:nil]
+        FizzyBuzzy().calculate(&dataSource)
+        super.init(coder: coder)
+    }
 }
 
 public extension FizzBuzzCollectionViewController {
+    
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 10
+        return dataSource.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -23,7 +31,7 @@ public extension FizzBuzzCollectionViewController {
         cell.with(text: String(input))
 
         if isResultColumn {
-            cell.with(text: FizzyBuzzy().calculate(input))
+            cell.with(text: dataSource[input]!!)
         }
         
         return cell
