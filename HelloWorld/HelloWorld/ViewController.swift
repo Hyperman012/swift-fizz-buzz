@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  HelloWorld
-//
-//  Created by Kevin Sivic on 1/19/22.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
@@ -51,19 +44,24 @@ class ViewController: UIViewController {
     }
     
     func labelStack() {
-        let stack = UIStackView()
-        
-        let inputLabel = CustomLabel()
-//        inputLabel.text = "Input"
-        
+        let fizzBuzzInput = CustomLabel()
+        let fizzBuzzOutput = CustomLabel()
+        let fizzBuzzStack = UIStackView()
+
+        fizzBuzzStack.axis = .horizontal
+        fizzBuzzStack.spacing = 10
+        fizzBuzzStack.addArrangedSubview(fizzBuzzInput)
+        fizzBuzzStack.addArrangedSubview(fizzBuzzOutput)
+
         let view = UIView()
         view.backgroundColor = .orange
         view.heightAnchor.constraint(equalToConstant: 50).isActive = true
 
         let outputLabel = UILabel()
         outputLabel.text = "Output"
-        
-        stack.addArrangedSubview(inputLabel)
+
+        let stack = UIStackView()
+        stack.addArrangedSubview(fizzBuzzStack)
         stack.addArrangedSubview(view)
         stack.addArrangedSubview(outputLabel)
         
@@ -71,7 +69,8 @@ class ViewController: UIViewController {
         
         labelStackLayout(view, stack)
 
-        inputLabel.setText(newText: "Hello World")
+        fizzBuzzInput.setText(newText: "Hello World")
+        fizzBuzzOutput.setText(newText: "Bye")
     }
     
     override func viewDidLoad() {

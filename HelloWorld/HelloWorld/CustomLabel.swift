@@ -11,13 +11,13 @@ class CustomLabel: UIView {
         addSubview(label)
 
         //Design
-        label.backgroundColor = .red
+        //label.backgroundColor = .red
         label.translatesAutoresizingMaskIntoConstraints = false
         self.heightAnchor.constraint(equalTo: label.heightAnchor).isActive = true
+        self.widthAnchor.constraint(equalTo: label.widthAnchor).isActive = true
     }
 
     public func setText(newText: String) {
-        //Content
         label.text = newText
     }
 
