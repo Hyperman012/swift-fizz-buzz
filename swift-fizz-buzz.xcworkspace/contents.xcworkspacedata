@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:FizzBuzz/../HelloWorld/HelloWorld.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:storyboard/storyboard.xcodeproj">
    </FileRef>
    <FileRef
