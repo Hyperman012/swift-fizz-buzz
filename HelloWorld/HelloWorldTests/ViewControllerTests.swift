@@ -18,9 +18,21 @@ class ViewControllerTests: XCTestCase {
         XCTAssertEqual(viewController.city.text, "City")
     }
 
-    func testShouldHaveConditionLabel() throws {
+    @MainActor func testShouldUpdateModelWithCurrentCondition() async throws {
         let viewController = ViewController()
+        await viewController.updateModelWithCurrentCondition()
+
+        XCTAssertEqual(viewController.model.condition, "Hazy/Lazy")
+    }
+
+    func testShouldUpdateLabelWhenModelIsUpdated() throws {
+        let viewController = ViewController()
+        viewController.scheduler = DispatchQueue(label: "MyScheduler")
+
         viewController.loadViewIfNeeded()
+        viewController.model.condition = "Hazy/Lazy"
+
+        viewController.scheduler.sync {}
 
         XCTAssertEqual(viewController.condition.text, "Hazy/Lazy")
     }

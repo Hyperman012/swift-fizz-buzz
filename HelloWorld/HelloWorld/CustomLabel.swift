@@ -4,7 +4,14 @@ import UIKit
 class CustomLabel: UIView {
     var label = UILabel()
 
-    public var text: String? {get {label.text}}
+    public var text: String {
+        get {
+            label.text ?? ""
+        }
+        set(text) {
+            label.text = text
+        }
+    }
 
     override init(frame: CGRect) {
         super.init(frame: frame)

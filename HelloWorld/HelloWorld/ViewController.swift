@@ -1,8 +1,9 @@
 import UIKit
+import Combine
 
 class WeatherService {
-    func getCurrentWeather(_ model: WeatherModel) {
-        Thread.sleep(forTimeInterval: 5)
+    func getCurrentWeather(_ model: WeatherModel) async {
+        Thread.sleep(forTimeInterval: 2)
 
         model.condition = "Hazy/Lazy"
     }
@@ -12,6 +13,11 @@ class ViewController: UIViewController {
     public var city: CustomLabel!
 
     public var condition: CustomLabel!
+
+    private var observers: [AnyCancellable] = []
+
+    var model = WeatherModel()
+    public var scheduler: DispatchQueue = DispatchQueue.main
 
     fileprivate func blueRedStack() {
         let stack = UIStackView()
@@ -39,7 +45,7 @@ class ViewController: UIViewController {
         stack.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         stack.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
     }
-    
+
     fileprivate func labelStackLayout(_ view: UIView, _ stack: UIStackView) {
         stack.translatesAutoresizingMaskIntoConstraints = false
 
@@ -81,10 +87,15 @@ class ViewController: UIViewController {
         city.setText("City")
 
         condition = CustomLabel()
-        var model = WeatherModel()
-        WeatherService().getCurrentWeather(model)
-        condition.setText(model.condition!)
 
+        let task = Task.detached(priority: TaskPriority.userInitiated) { [self] in
+            await updateModelWithCurrentCondition()
+        }
+
+        model.$condition
+                .receive(on: scheduler)
+                .assign(to: \.text, on: condition!)
+                .store(in: &observers)
 
         weatherView.addArrangedSubview(city)
         weatherView.addArrangedSubview(condition)
@@ -93,9 +104,13 @@ class ViewController: UIViewController {
         weatherView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         weatherView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
+
+    public func updateModelWithCurrentCondition() async {
+        await WeatherService().getCurrentWeather(model)
+    }
 }
 
 class WeatherModel : ObservableObject {
-    var condition : String?
+    @Published public var condition : String = ""
 }
 
