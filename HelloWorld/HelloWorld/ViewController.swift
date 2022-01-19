@@ -12,7 +12,6 @@ class ViewController: UIViewController {
     fileprivate func blueRedStack() {
         let stack = UIStackView()
 
-        
         let view = UIView()
         view.backgroundColor = .red
         view.heightAnchor.constraint(equalToConstant: 100).isActive = true
@@ -54,8 +53,8 @@ class ViewController: UIViewController {
     func labelStack() {
         let stack = UIStackView()
         
-        let inputLabel = UILabel()
-        inputLabel.text = "Input"
+        let inputLabel = CustomLabel()
+//        inputLabel.text = "Input"
         
         let view = UIView()
         view.backgroundColor = .orange
@@ -71,6 +70,8 @@ class ViewController: UIViewController {
         self.view.addSubview(stack)
         
         labelStackLayout(view, stack)
+
+        inputLabel.setText(newText: "Hello World")
     }
     
     override func viewDidLoad() {

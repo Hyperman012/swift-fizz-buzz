@@ -16,6 +16,7 @@
 		CCB5EE8D27984D4E008E338B /* HelloWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB5EE8C27984D4E008E338B /* HelloWorldTests.swift */; };
 		CCB5EE9727984D4E008E338B /* HelloWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB5EE9627984D4E008E338B /* HelloWorldUITests.swift */; };
 		CCB5EE9927984D4E008E338B /* HelloWorldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB5EE9827984D4E008E338B /* HelloWorldUITestsLaunchTests.swift */; };
+		F0263D4BC0269AAC5CBBC6D3 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F026329FD300214794D32892 /* CustomLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		CCB5EE9227984D4E008E338B /* HelloWorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCB5EE9627984D4E008E338B /* HelloWorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldUITests.swift; sourceTree = "<group>"; };
 		CCB5EE9827984D4E008E338B /* HelloWorldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F026329FD300214794D32892 /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				CCB5EE7E27984D4E008E338B /* Assets.xcassets */,
 				CCB5EE8027984D4E008E338B /* LaunchScreen.storyboard */,
 				CCB5EE8327984D4E008E338B /* Info.plist */,
+				F026329FD300214794D32892 /* CustomLabel.swift */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				CCB5EE7A27984D4D008E338B /* ViewController.swift in Sources */,
 				CCB5EE7627984D4D008E338B /* AppDelegate.swift in Sources */,
 				CCB5EE7827984D4D008E338B /* SceneDelegate.swift in Sources */,
+				F0263D4BC0269AAC5CBBC6D3 /* CustomLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
