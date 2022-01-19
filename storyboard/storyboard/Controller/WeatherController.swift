@@ -3,7 +3,7 @@ import Foundation
 public class WeatherController {
     private let viewModel: WeatherViewModel
 
-    init(_ viewModel: WeatherViewModel) {
+    public init(_ viewModel: WeatherViewModel) {
         self.viewModel = viewModel
     }
 

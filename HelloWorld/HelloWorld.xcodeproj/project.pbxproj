@@ -13,7 +13,7 @@
 		CCB5EE7D27984D4D008E338B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCB5EE7B27984D4D008E338B /* Main.storyboard */; };
 		CCB5EE7F27984D4E008E338B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCB5EE7E27984D4E008E338B /* Assets.xcassets */; };
 		CCB5EE8227984D4E008E338B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCB5EE8027984D4E008E338B /* LaunchScreen.storyboard */; };
-		CCB5EE8D27984D4E008E338B /* HelloWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB5EE8C27984D4E008E338B /* HelloWorldTests.swift */; };
+		CCB5EE8D27984D4E008E338B /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB5EE8C27984D4E008E338B /* ViewControllerTests.swift */; };
 		CCB5EE9727984D4E008E338B /* HelloWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB5EE9627984D4E008E338B /* HelloWorldUITests.swift */; };
 		CCB5EE9927984D4E008E338B /* HelloWorldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB5EE9827984D4E008E338B /* HelloWorldUITestsLaunchTests.swift */; };
 		F02636F8FE9296F16B34848F /* FizzBuzzRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0263CA2F4E64FF9BBC0C286 /* FizzBuzzRowView.swift */; };
@@ -47,7 +47,7 @@
 		CCB5EE8127984D4E008E338B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCB5EE8327984D4E008E338B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCB5EE8827984D4E008E338B /* HelloWorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCB5EE8C27984D4E008E338B /* HelloWorldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldTests.swift; sourceTree = "<group>"; };
+		CCB5EE8C27984D4E008E338B /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		CCB5EE9227984D4E008E338B /* HelloWorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCB5EE9627984D4E008E338B /* HelloWorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldUITests.swift; sourceTree = "<group>"; };
 		CCB5EE9827984D4E008E338B /* HelloWorldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -119,7 +119,7 @@
 		CCB5EE8B27984D4E008E338B /* HelloWorldTests */ = {
 			isa = PBXGroup;
 			children = (
-				CCB5EE8C27984D4E008E338B /* HelloWorldTests.swift */,
+				CCB5EE8C27984D4E008E338B /* ViewControllerTests.swift */,
 			);
 			path = HelloWorldTests;
 			sourceTree = "<group>";
@@ -276,7 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCB5EE8D27984D4E008E338B /* HelloWorldTests.swift in Sources */,
+				CCB5EE8D27984D4E008E338B /* ViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,6 +1,10 @@
 import UIKit
+import storyboard
 
 class ViewController: UIViewController {
+    public var city: CustomLabel!
+
+    public var condition: CustomLabel!
 
     fileprivate func blueRedStack() {
         let stack = UIStackView()
@@ -66,14 +70,17 @@ class ViewController: UIViewController {
         let weatherView = UIStackView()
         weatherView.translatesAutoresizingMaskIntoConstraints = false
 
-        let label = CustomLabel()
-        label.setText("city")
+        city = CustomLabel()
+        city.setText("City")
 
-        weatherView.addArrangedSubview(label)
+        condition = CustomLabel()
+        condition.setText("Hazy/Lazy")
+
+        weatherView.addArrangedSubview(city)
 
         view.addSubview(weatherView)
-        weatherView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
-        weatherView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
+        weatherView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        weatherView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
 }
 
