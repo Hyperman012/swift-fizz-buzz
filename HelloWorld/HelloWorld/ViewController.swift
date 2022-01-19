@@ -1,10 +1,10 @@
 import UIKit
 
 class WeatherService {
-    func getCurrentWeather() -> String {
+    func getCurrentWeather(_ model: WeatherModel) {
         Thread.sleep(forTimeInterval: 5)
 
-        return "Hazy/Lazy"
+        model.condition = "Hazy/Lazy"
     }
 }
 
@@ -81,8 +81,9 @@ class ViewController: UIViewController {
         city.setText("City")
 
         condition = CustomLabel()
-            let conditionString = WeatherService().getCurrentWeather()
-            condition.setText(conditionString)
+        var model = WeatherModel()
+        WeatherService().getCurrentWeather(model)
+        condition.setText(model.condition!)
 
 
         weatherView.addArrangedSubview(city)
@@ -92,5 +93,9 @@ class ViewController: UIViewController {
         weatherView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         weatherView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
+}
+
+class WeatherModel : ObservableObject {
+    var condition : String?
 }
 
