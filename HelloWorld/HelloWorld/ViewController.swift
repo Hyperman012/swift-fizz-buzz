@@ -30,10 +30,8 @@ class ViewController: UIViewController {
     }
     
     fileprivate func labelStackLayout(_ view: UIView, _ stack: UIStackView) {
-        view.widthAnchor.constraint(equalTo: stack.widthAnchor).isActive = true
-        
         stack.translatesAutoresizingMaskIntoConstraints = false
-        
+
         stack.axis = .vertical
         stack.distribution = .equalSpacing
         stack.alignment = .leading
@@ -44,41 +42,38 @@ class ViewController: UIViewController {
     }
     
     func labelStack() {
-        let fizzBuzzInput = CustomLabel()
-        let fizzBuzzOutput = CustomLabel()
-        let fizzBuzzStack = UIStackView()
+        let fizzBuzzStack = FizzBuzzRowView()
 
-        fizzBuzzStack.axis = .horizontal
-        fizzBuzzStack.spacing = 10
-        fizzBuzzStack.addArrangedSubview(fizzBuzzInput)
-        fizzBuzzStack.addArrangedSubview(fizzBuzzOutput)
-
-        let view = UIView()
-        view.backgroundColor = .orange
-        view.heightAnchor.constraint(equalToConstant: 50).isActive = true
-
-        let outputLabel = UILabel()
-        outputLabel.text = "Output"
+        fizzBuzzStack.input.setText("Input")
+        fizzBuzzStack.output.setText("Output")
 
         let stack = UIStackView()
         stack.addArrangedSubview(fizzBuzzStack)
-        stack.addArrangedSubview(view)
-        stack.addArrangedSubview(outputLabel)
-        
-        self.view.addSubview(stack)
-        
-        labelStackLayout(view, stack)
 
-        fizzBuzzInput.setText(newText: "Hello World")
-        fizzBuzzOutput.setText(newText: "Bye")
+        view.addSubview(stack)
+
+        labelStackLayout(view, stack)
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        labelStack()
+        //labelStack()
+        createWeather()
     }
 
+    private func createWeather() {
+        let weatherView = UIStackView()
+        weatherView.translatesAutoresizingMaskIntoConstraints = false
 
+        let label = CustomLabel()
+        label.setText("city")
+
+        weatherView.addArrangedSubview(label)
+
+        view.addSubview(weatherView)
+        weatherView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        weatherView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
+    }
 }
 
