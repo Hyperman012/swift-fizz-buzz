@@ -1,5 +1,12 @@
 import UIKit
-import storyboard
+
+class WeatherService {
+    func getCurrentWeather() -> String {
+        Thread.sleep(forTimeInterval: 5)
+
+        return "Hazy/Lazy"
+    }
+}
 
 class ViewController: UIViewController {
     public var city: CustomLabel!
@@ -74,9 +81,12 @@ class ViewController: UIViewController {
         city.setText("City")
 
         condition = CustomLabel()
-        condition.setText("Hazy/Lazy")
+            let conditionString = WeatherService().getCurrentWeather()
+            condition.setText(conditionString)
+
 
         weatherView.addArrangedSubview(city)
+        weatherView.addArrangedSubview(condition)
 
         view.addSubview(weatherView)
         weatherView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
